@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybrilla Assignment</title>
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav id="mynav" class="nav-container">
+        <div class="nav-menu-left-container">
+          <img class="svg-menu" src="dist/img/menu.svg" alt="Menu Icon" />
+          <div class="fine-line"></div>
+          <h2 class="logo">LOGO</h2>
+          <ul class="nav-items-left">
+            <li class="nav-item">
+              <a href="#">Invest</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Learn</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-menu-right-container">
+          <ul class="nav-items-right">
+            <li class="nav-item">
+              <a class="active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Blogs</a>
+            </li>
+          </ul>
+          <div class="nav-btn">
+            <button class="btn-signup">Login/Register</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="main-section">
+        <section class="left-section">
+          <h1>Start Now for Wealth Creation</h1>
+          <p>
+            To generate long term capital appreciation and income distribution
+            to investors from a portfolio that is predominantly invested in
+            equity and equity related securities of large cap companies.
+          </p>
+          <p class="did-you-know">
+            <span>Did you know</span>
+            if you had invested Rs.50,000 in last 3 years, you would have grown
+            by % now
+          </p>
+          <section class="calculation-section">
+            <button class="btn-lumpsum active">Lumpsum</button>
+            <button class="btn-sip">SIP</button>
+            <div class="expenditure-row">
+              <span>I can Invest</span>
+              <span>Rs.<span class="output">10000</span></span>
+            </div>
+            <!-- <input type="range" id="rangeslider" /> -->
+            <div class="third">
+              <input id="slider" class="range-slider" type="range" min="1000" max="50000" step="1" value="10000" data-rangeslider>
+              <!-- <div class="output">10000</div> -->
+          </div>
+
+            </div>
+            <p class="para-years">For how many years?</p>
+            <div class="button-years">
+              <button>1Y</button>
+              <button>3Y</button>
+              <button>5Y</button>
+            </div>
+            <div class="line-under-year-btns"></div>
+            <div class="flexbox-text-1">
+              <span>Estimated Value</span>
+              <span>Rs. 23,00,000</span>
+            </div>
+            <div class="flexbox-text-2">
+              <span>as per Historical Returns</span>
+              <span>with 9.3% annual returns</span>
+            </div>
+            <div class="investment-btns">
+              <button>Begin Investment</button>
+              <button>Check your investment need</button>
+            </div>
+          </section>
+        </section>
+        <section class="right-section">
+          <h2>Learn more</h2>
+          <div class="youtube-video-container">
+            <picture>
+              <source
+                srcset="dist/img/sharon-mccutcheon--8a5eJ1-mmQ-unsplash@2x.png"
+                media="(max-resolution: 300dpi)"
+                alt="YouTube Thumbnail"
+              />
+              <img
+                src="dist/img/sharon-mccutcheon--8a5eJ1-mmQ-unsplash.png"
+                alt="YouTube Thumbnail"
+              />
+            </picture>
+            <img
+              class="youtube-icon"
+              src="dist/img/play.svg"
+              alt="YouTube Icon"
+            />
+            <div>
+              <h3>Start Now for Wealth Creation</h3>
+            </div>
+            <div class="heading-youtube-bg"></div>
+          </div>
+          <h2>Scheme Details</h2>
+          <p>ICICI Prudential Bluechip Fund</p>
+        </section>
+      </section>
+      <section class="bottom-section">
+        <div class="bottom-greyish-div">
+          <h1>Plan Your Investment Now</h1>
+          <div class="bottom-white-div">
+            <div class="light-greyish-div">
+              <p>
+                You can check how much about you should be savings for mutual
+                fund investment here before you decide to invest!
+              </p>
+            </div>
+            <h3>I have a financial goal of</h3>
+            <div class="input-align-div">
+              <input
+                class="input-one-investment"
+                type="text"
+                placeholder="Rs. 5000"
+              />
+
+              <span class="in-next-year">In next</span>
+              <input class="input-two-years" type="text" placeholder="3" />
+              <span class="no-of-years">Years</span>
+            </div>
+            <button class="btn-next-investment">Next</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="src/js/rangeslider-js.min.js"></script>
+    <script src="src/js/main.js"></script>
+  </body>
+</html>

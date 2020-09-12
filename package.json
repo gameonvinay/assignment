@@ -1,0 +1,32 @@
+{
+  "name": "www.gameondevs.com",
+  "version": "1.0.0",
+  "description": "www.gameondevs.com",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-core": "^6.26.3",
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "sass": "node-sass -w src/scss/main.scss dist/css/style.css"
+  },
+  "author": "Gameonvinay",
+  "license": "ISC"
+}
