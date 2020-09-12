@@ -1,0 +1,47 @@
+.rangeslider {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  height: 25px;
+  width: 97.8rem;
+  margin-top: 7.4rem;
+  margin-left: 5.5rem;
+}
+.rangeslider__fill,
+.rangeslider__fill__bg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  height: 4px;
+  z-index: 2;
+  background: #2562ed;
+  border-radius: 10px;
+  will-change: width;
+}
+.rangeslider__handle {
+  will-change: width, height, top;
+  height: 54px;
+  width: 38px;
+  position: absolute;
+  top: 50%;
+  background: #2562ed;
+  display: inline-block;
+  z-index: 3;
+  cursor: pointer;
+  border-radius: 60px;
+  box-shadow: 5px 5px 25px rgba(37, 98, 237, 0.6);
+  -webkit-transition: width 0.1s ease-in-out, height 0.1s ease-in-out,
+    top 0.1s ease-in-out;
+  transition: width 0.1s ease-in-out, height 0.1s ease-in-out,
+    top 0.1s ease-in-out;
+}
+.rangeslider__handle:active {
+  background: #2562ed;
+}
+.rangeslider__fill__bg {
+  background: #ccc;
+  width: 100%;
+}
+.rangeslider--disabled {
+  opacity: 0.4;
+}

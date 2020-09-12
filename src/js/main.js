@@ -17,15 +17,12 @@ window.addEventListener("scroll", function () {
 
 var sliderEl3 = document.querySelector('.third [data-rangeslider]')
 
-
 sliderEl3.addEventListener('input', (ev) => {
   document.querySelector('.output').innerHTML = ev.target.value
 })
 rangesliderJs.create(sliderEl3, {
-
-
   onSlide: function () {
-    console.log(this)
+    /* console.log(this) */
   }
 })
 

@@ -1,0 +1,466 @@
+@charset "UTF-8";
+/* Variables */
+:root {
+  --color-background: #f4f4f4;
+  --color-sec-background: #e8ecf4;
+  --color-white: #ffffff;
+  --color-black: 0, 0, 0;
+  --color-primary: #2562ed;
+  --color-text: #333f52;
+  --color-year-button: #bec4cc;
+  --color-primary-logo: rgba(37, 98, 237, 0.3); }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  background: var(--color-background); }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open sans", sans-serif;
+  height: 2000px;
+  max-width: 1920;
+  color: var(--color-text-nav);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background: var(--color-background);
+  overflow-x: hidden; }
+
+button,
+input {
+  font-family: "Open sans", sans-serif; }
+
+.main-header {
+  height: 10rem; }
+
+.nav-container {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  padding: 2.8rem 2.7rem;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: var(--color-background); }
+
+.nav-dropshadow {
+  box-shadow: 1px 1px 30px var(--color-text); }
+
+.nav-menu-left-container {
+  display: flex;
+  margin-left: 2.7rem;
+  align-items: center; }
+  .nav-menu-left-container .fine-line {
+    position: absolute;
+    height: 5.2rem;
+    width: 1px;
+    left: 11.8rem;
+    border-left: 1px solid #e3e3e3; }
+  .nav-menu-left-container .nav-items-left {
+    display: flex;
+    margin-left: 10rem; }
+    .nav-menu-left-container .nav-items-left .nav-item:nth-child(2) {
+      margin-left: 4.5rem; }
+    .nav-menu-left-container .nav-items-left .nav-item a {
+      color: var(--color-text); }
+
+.nav-menu-right-container {
+  display: flex;
+  margin-right: 14%;
+  align-items: center; }
+  .nav-menu-right-container .nav-items-right {
+    display: flex; }
+    .nav-menu-right-container .nav-items-right .nav-item {
+      margin: 0 0.6rem; }
+      .nav-menu-right-container .nav-items-right .nav-item a {
+        color: rgba(51, 63, 82, 0.3); }
+        .nav-menu-right-container .nav-items-right .nav-item a:hover {
+          color: var(--color-primary); }
+        .nav-menu-right-container .nav-items-right .nav-item a:focus {
+          outline: none;
+          color: var(--color-primary); }
+        .nav-menu-right-container .nav-items-right .nav-item a:active {
+          outline: none;
+          color: var(--color-primary); }
+      .nav-menu-right-container .nav-items-right .nav-item .active {
+        color: var(--color-primary); }
+
+.svg-menu {
+  cursor: pointer;
+  padding: 0 0.7rem; }
+
+.logo {
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary-logo);
+  justify-content: flex-start;
+  margin-left: 8.3rem;
+  padding: 0.3rem 0.8rem; }
+
+.nav-items {
+  display: flex;
+  flex-direction: row; }
+
+.nav-item {
+  list-style: none; }
+
+.nav-item a {
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1rem 0;
+  margin: 0 2rem;
+  font-weight: 500;
+  transition: all 0.2s ease 0s; }
+
+.nav-btn button {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1.2rem 1.3rem;
+  margin-left: 2rem;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  outline: none;
+  border-radius: 0.2rem;
+  background: var(--color-primary);
+  box-shadow: 1px 7px 15px rgba(var(--color-black), 0.25);
+  transition: all 0.1s; }
+  .nav-btn button:hover {
+    border: 1px solid var(--color-primary);
+    background: var(--color-background);
+    color: var(--color-primary);
+    box-shadow: 8px 8px 20px rgba(var(--color-black), 0.25); }
+  .nav-btn button:focus {
+    border: 1px solid var(--color-primary);
+    background: var(--color-background);
+    color: var(--color-primary);
+    box-shadow: 8px 8px 20px rgba(var(--color-black), 0.25); }
+  .nav-btn button:active {
+    box-shadow: inset 10px 10px 20px rgba(var(--color-black), 0.1); }
+
+/* Navigation ends here */
+/* Hero Section Starts here*/
+.main-section {
+  margin-top: 4rem;
+  margin-left: 14.4rem;
+  margin-right: 12.4rem;
+  padding-bottom: 8rem;
+  display: grid;
+  grid-template-columns: 5fr 48.5rem; }
+  .main-section .left-section h1 {
+    font-size: 3rem;
+    color: var(--color-text); }
+  .main-section .left-section p {
+    font-size: 2.2rem;
+    line-height: 4.2rem;
+    margin-top: 2.4rem;
+    margin-right: 16.7rem; }
+  .main-section .left-section .did-you-know {
+    margin-top: 2rem;
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 1.3rem 3.5rem;
+    background-color: #e6ebff;
+    font-weight: 400;
+    color: var(--color-text); }
+    .main-section .left-section .did-you-know span {
+      font-weight: 700;
+      color: var(--color-primary); }
+  .main-section .left-section .calculation-section {
+    margin-top: 5rem; }
+    .main-section .left-section .calculation-section button {
+      position: relative;
+      background-color: transparent;
+      font-size: 2.6rem;
+      font-weight: 600;
+      padding: 0.5rem 0;
+      border: none;
+      outline: none;
+      transition: all 0.2s ease 0s; }
+      .main-section .left-section .calculation-section button:hover {
+        color: var(--color-primary); }
+      .main-section .left-section .calculation-section button:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        height: 4px;
+        width: 0;
+        background: transparent; }
+      .main-section .left-section .calculation-section button:after {
+        transition: width 0.3s ease, background-color 0.3s ease, left 0.3s ease; }
+      .main-section .left-section .calculation-section button:hover:after {
+        width: 100%;
+        left: 0;
+        background: var(--color-primary); }
+    .main-section .left-section .calculation-section .btn-lumpsum,
+    .main-section .left-section .calculation-section .active {
+      color: rgba(51, 63, 82, 0.3);
+      color: var(--color-primary); }
+    .main-section .left-section .calculation-section .active {
+      color: var(--color-primary);
+      border-bottom: 4px solid var(--color-primary); }
+    .main-section .left-section .calculation-section .btn-sip {
+      margin-left: 4rem;
+      color: rgba(51, 63, 82, 0.3); }
+    .main-section .left-section .calculation-section .expenditure-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 6.6rem;
+      margin-right: 6.8rem; }
+      .main-section .left-section .calculation-section .expenditure-row span:nth-child(1) {
+        color: var(--color-text);
+        font-size: 2.4rem; }
+      .main-section .left-section .calculation-section .expenditure-row span:nth-child(2) {
+        color: var(--color-primary);
+        font-size: 3rem;
+        font-weight: 600; }
+        .main-section .left-section .calculation-section .expenditure-row span:nth-child(2) span {
+          color: var(--color-primary);
+          font-size: 3rem;
+          font-weight: 600; }
+    .main-section .left-section .calculation-section .range-slider {
+      margin-top: 7.4rem;
+      margin-left: 5.5rem; }
+    .main-section .left-section .calculation-section #slider {
+      width: 97.8rem; }
+    .main-section .left-section .calculation-section .para-years {
+      font-size: 2.4rem;
+      margin-top: 8.3rem; }
+    .main-section .left-section .calculation-section .button-years {
+      margin-top: 4.1rem; }
+      .main-section .left-section .calculation-section .button-years button {
+        height: 6.4rem;
+        width: 13.6rem;
+        border-radius: 60px;
+        font-size: 2.6rem;
+        letter-spacing: 5px;
+        color: var(--color-white);
+        background-color: var(--color-primary);
+        border: 1px solid var(--color-primary); }
+        .main-section .left-section .calculation-section .button-years button:nth-child(1) {
+          margin-right: 4rem; }
+        .main-section .left-section .calculation-section .button-years button:nth-child(2) {
+          margin-right: 4rem;
+          color: var(--color-year-button);
+          background-color: var(--color-white);
+          border: 1px solid var(--color-year-button); }
+        .main-section .left-section .calculation-section .button-years button:nth-child(3) {
+          color: var(--color-year-button);
+          background-color: var(--color-white);
+          border: 1px solid var(--color-year-button); }
+    .main-section .left-section .calculation-section .line-under-year-btns {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      display: block;
+      border-top: 2px solid #e3e3e3;
+      height: 1px;
+      width: 108.8rem; }
+    .main-section .left-section .calculation-section .flexbox-text-1 {
+      display: flex;
+      justify-content: space-between; }
+      .main-section .left-section .calculation-section .flexbox-text-1 span:nth-child(1) {
+        padding-top: 1.5rem;
+        display: block;
+        font-size: 2.4rem;
+        font-weight: 600; }
+      .main-section .left-section .calculation-section .flexbox-text-1 span:nth-child(2) {
+        color: var(--color-primary);
+        font-size: 3.4rem;
+        font-weight: 600;
+        display: block; }
+    .main-section .left-section .calculation-section .flexbox-text-2 {
+      display: flex;
+      justify-content: space-between; }
+      .main-section .left-section .calculation-section .flexbox-text-2 span:nth-child(1) {
+        font-size: 2.4rem;
+        font-weight: 600; }
+      .main-section .left-section .calculation-section .flexbox-text-2 span:nth-child(2) {
+        font-size: 2.4rem;
+        font-weight: 600; }
+    .main-section .left-section .calculation-section .investment-btns {
+      margin-top: 7.5rem; }
+      .main-section .left-section .calculation-section .investment-btns button {
+        height: 6rem;
+        width: 32.3rem;
+        font-size: 2rem;
+        font-weight: 700;
+        border: 2px solid var(--color-primary); }
+      .main-section .left-section .calculation-section .investment-btns button:nth-child(1) {
+        color: var(--color-white);
+        background-color: var(--color-primary);
+        margin-right: 5rem; }
+      .main-section .left-section .calculation-section .investment-btns button:nth-child(2) {
+        color: var(--color-primary);
+        background-color: var(--color-white); }
+  .main-section .right-section h2 {
+    font-size: 3rem;
+    color: var(--color-text);
+    margin-bottom: 3rem; }
+  .main-section .right-section picture img {
+    width: 48.6rem;
+    height: 30rem; }
+  .main-section .right-section .youtube-video-container {
+    position: relative;
+    margin-bottom: 7rem; }
+    .main-section .right-section .youtube-video-container .youtube-icon {
+      position: absolute;
+      top: 50%;
+      right: 38%;
+      transform: translate(-50%, -50%); }
+    .main-section .right-section .youtube-video-container h3 {
+      position: absolute;
+      top: 88%;
+      left: 34%;
+      transform: translate(-50%, -50%);
+      font-size: 1.8rem;
+      color: var(--color-white);
+      font-weight: 400;
+      z-index: 1; }
+    .main-section .right-section .youtube-video-container .heading-youtube-bg {
+      position: absolute;
+      top: 88%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 6.4rem;
+      width: 48.6rem;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)); }
+  .main-section .right-section h2 {
+    font-size: 3rem;
+    color: var(--color-text); }
+  .main-section .right-section p {
+    margin-top: 3.5rem;
+    font-size: 2rem;
+    color: var(--color-primary); }
+
+/* Hero Section Ends here*/
+/* Plan your Investment Section */
+.bottom-section {
+  background-color: var(--color-sec-background);
+  color: 1px border pink;
+  height: 79.4rem;
+  padding-top: 5rem; }
+  .bottom-section .bottom-greyish-div {
+    margin-left: 14rem; }
+    .bottom-section .bottom-greyish-div h1 {
+      font-size: 30px; }
+    .bottom-section .bottom-greyish-div .bottom-white-div {
+      margin-top: 7rem;
+      border-radius: 1rem;
+      background-color: #ffffff;
+      width: 164rem;
+      height: 48.1rem;
+      align-content: center;
+      text-align: center; }
+      .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
+        height: 11.7rem;
+        text-align: center;
+        background-color: #f8faff; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
+          display: block;
+          font-size: 2.4rem;
+          text-align: center;
+          height: 11.7rem;
+          text-align: center;
+          padding: 4rem; }
+      .bottom-section .bottom-greyish-div .bottom-white-div h3 {
+        font-size: 2.8rem;
+        text-align: center;
+        margin-top: 3rem;
+        font-weight: 600; }
+      .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div {
+        margin-top: 4rem;
+        height: 5.5rem; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div input {
+          text-align: center;
+          font-size: 4rem;
+          font-weight: 600;
+          border: none;
+          padding-bottom: 2.05rem;
+          border-bottom: 3px solid #2562ed; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .input-one-investment {
+          width: 36.7rem; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .input-two-years {
+          width: 21.8rem; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div ::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          color: rgba(51, 63, 82, 0.2); }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div ::-moz-placeholder {
+          /* Firefox 19+ */
+          color: rgba(51, 63, 82, 0.2); }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div :-ms-input-placeholder {
+          /* IE 10+ */
+          color: rgba(51, 63, 82, 0.2); }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div :-moz-placeholder {
+          /* Firefox 18- */
+          color: rgba(51, 63, 82, 0.2); }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .in-next-year {
+          display: inline-block;
+          font-size: 2.8rem;
+          font-weight: 600;
+          margin: 0 7.2rem 0 6.4rem; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .no-of-years {
+          display: inline-block;
+          font-size: 2.8rem;
+          font-weight: 600;
+          margin: 0 0 0 4.05rem; }
+      .bottom-section .bottom-greyish-div .bottom-white-div .btn-next-investment {
+        border: none;
+        outline: none;
+        margin-top: 6.95rem;
+        width: 17.1rem;
+        height: 6rem;
+        color: var(--color-white);
+        background: var(--color-primary);
+        font-size: 2rem;
+        font-weight: 600; }
+
+/* Plan your Investment Section ends here */
+/* Footer */
+.footer-section {
+  background-color: var(--color-background);
+  font-size: 1.4rem;
+  line-height: 2;
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "one one two two" "one one two two" "three three four four" "three three four four" "five five five five"; }
+
+.footer-section-social-media {
+  grid-area: one; }
+
+.footer-section-website-type {
+  grid-area: two; }
+
+.footer-section-tech-stack {
+  grid-area: three; }
+
+.footer-section-misc-links {
+  grid-area: four; }
+
+.footer-section-copyright {
+  grid-area: five; }
+
+/* Footer ends */
+/* 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
