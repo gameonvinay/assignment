@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Variables */
 :root {
   --color-background: #f4f4f4;
@@ -60,10 +59,10 @@ input {
   margin-left: 2.7rem;
   align-items: center; }
   .nav-menu-left-container .fine-line {
-    position: absolute;
+    position: relative;
     height: 5.2rem;
     width: 1px;
-    left: 11.8rem;
+    left: 5rem;
     border-left: 1px solid #e3e3e3; }
   .nav-menu-left-container .nav-items-left {
     display: flex;
@@ -123,7 +122,7 @@ input {
   font-weight: 500;
   transition: all 0.2s ease 0s; }
 
-.nav-btn button {
+.nav-btn .btn-signup {
   text-decoration: none;
   cursor: pointer;
   padding: 1.2rem 1.3rem;
@@ -138,18 +137,18 @@ input {
   background: var(--color-primary);
   box-shadow: 1px 7px 15px rgba(var(--color-black), 0.25);
   transition: all 0.1s; }
-  .nav-btn button:hover {
+  .nav-btn .btn-signup:hover {
     border: 1px solid var(--color-primary);
-    background: var(--color-background);
+    background: var(--color-white);
     color: var(--color-primary);
     box-shadow: 8px 8px 20px rgba(var(--color-black), 0.25); }
-  .nav-btn button:focus {
+  .nav-btn .btn-signup:focus {
     border: 1px solid var(--color-primary);
-    background: var(--color-background);
+    background: var(--color-white);
     color: var(--color-primary);
     box-shadow: 8px 8px 20px rgba(var(--color-black), 0.25); }
-  .nav-btn button:active {
-    box-shadow: inset 10px 10px 20px rgba(var(--color-black), 0.1); }
+  .nav-btn .btn-signup:active {
+    box-shadow: inset 2px 2px 5px rgba(var(--color-black), 0.1); }
 
 /* Navigation ends here */
 /* Hero Section Starts here*/
@@ -181,7 +180,8 @@ input {
       color: var(--color-primary); }
   .main-section .left-section .calculation-section {
     margin-top: 5rem; }
-    .main-section .left-section .calculation-section button {
+    .main-section .left-section .calculation-section .btn-lumpsum,
+    .main-section .left-section .calculation-section .btn-sip {
       position: relative;
       background-color: transparent;
       font-size: 2.6rem;
@@ -190,9 +190,11 @@ input {
       border: none;
       outline: none;
       transition: all 0.2s ease 0s; }
-      .main-section .left-section .calculation-section button:hover {
+      .main-section .left-section .calculation-section .btn-lumpsum:hover,
+      .main-section .left-section .calculation-section .btn-sip:hover {
         color: var(--color-primary); }
-      .main-section .left-section .calculation-section button:after {
+      .main-section .left-section .calculation-section .btn-lumpsum:after,
+      .main-section .left-section .calculation-section .btn-sip:after {
         content: "";
         display: block;
         position: absolute;
@@ -201,9 +203,11 @@ input {
         height: 4px;
         width: 0;
         background: transparent; }
-      .main-section .left-section .calculation-section button:after {
+      .main-section .left-section .calculation-section .btn-lumpsum:after,
+      .main-section .left-section .calculation-section .btn-sip:after {
         transition: width 0.3s ease, background-color 0.3s ease, left 0.3s ease; }
-      .main-section .left-section .calculation-section button:hover:after {
+      .main-section .left-section .calculation-section .btn-lumpsum:hover:after,
+      .main-section .left-section .calculation-section .btn-sip:hover:after {
         width: 100%;
         left: 0;
         background: var(--color-primary); }
@@ -251,7 +255,8 @@ input {
         letter-spacing: 5px;
         color: var(--color-white);
         background-color: var(--color-primary);
-        border: 1px solid var(--color-primary); }
+        border: 1px solid var(--color-primary);
+        outline: none; }
         .main-section .left-section .calculation-section .button-years button:nth-child(1) {
           margin-right: 4rem; }
         .main-section .left-section .calculation-section .button-years button:nth-child(2) {
@@ -263,6 +268,18 @@ input {
           color: var(--color-year-button);
           background-color: var(--color-white);
           border: 1px solid var(--color-year-button); }
+        .main-section .left-section .calculation-section .button-years button:hover {
+          border: 1px solid var(--color-primary);
+          background: var(--color-white);
+          color: var(--color-primary);
+          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1); }
+        .main-section .left-section .calculation-section .button-years button:focus {
+          border: 1px solid var(--color-primary);
+          background: var(--color-white);
+          color: var(--color-primary);
+          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1); }
+        .main-section .left-section .calculation-section .button-years button:active {
+          box-shadow: inset 2px 2px 5px rgba(var(--color-black), 0.1); }
     .main-section .left-section .calculation-section .line-under-year-btns {
       margin-top: 4rem;
       margin-bottom: 4rem;
@@ -299,14 +316,27 @@ input {
         width: 32.3rem;
         font-size: 2rem;
         font-weight: 700;
-        border: 2px solid var(--color-primary); }
-      .main-section .left-section .calculation-section .investment-btns button:nth-child(1) {
-        color: var(--color-white);
-        background-color: var(--color-primary);
-        margin-right: 5rem; }
-      .main-section .left-section .calculation-section .investment-btns button:nth-child(2) {
-        color: var(--color-primary);
-        background-color: var(--color-white); }
+        border: 2px solid var(--color-primary);
+        outline: none; }
+        .main-section .left-section .calculation-section .investment-btns button:nth-child(1) {
+          color: var(--color-white);
+          background-color: var(--color-primary);
+          margin-right: 5rem; }
+        .main-section .left-section .calculation-section .investment-btns button:nth-child(2) {
+          color: var(--color-primary);
+          background-color: var(--color-white); }
+        .main-section .left-section .calculation-section .investment-btns button:hover {
+          border: 2px solid var(--color-primary);
+          background: var(--color-white);
+          color: var(--color-primary);
+          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1); }
+        .main-section .left-section .calculation-section .investment-btns button:focus {
+          border: 2px solid var(--color-primary);
+          background: var(--color-white);
+          color: var(--color-primary);
+          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1); }
+        .main-section .left-section .calculation-section .investment-btns button:active {
+          box-shadow: inset 1px 1px 2px rgba(var(--color-black), 0.1); }
   .main-section .right-section h2 {
     font-size: 3rem;
     color: var(--color-text);
@@ -386,6 +416,8 @@ input {
         margin-top: 4rem;
         height: 5.5rem; }
         .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div input {
+          outline: none;
+          color: rgba(51, 63, 82, 0.7);
           text-align: center;
           font-size: 4rem;
           font-weight: 600;
@@ -428,39 +460,17 @@ input {
         background: var(--color-primary);
         font-size: 2rem;
         font-weight: 600; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .btn-next-investment:hover {
+          border: 2px solid var(--color-primary);
+          background: var(--color-white);
+          color: var(--color-primary);
+          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1); }
+        .bottom-section .bottom-greyish-div .bottom-white-div .btn-next-investment:focus {
+          border: 2px solid var(--color-primary);
+          background: var(--color-white);
+          color: var(--color-primary);
+          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1); }
+        .bottom-section .bottom-greyish-div .bottom-white-div .btn-next-investment:active {
+          box-shadow: inset 1px 1px 2px rgba(var(--color-black), 0.1); }
 
 /* Plan your Investment Section ends here */
-/* Footer */
-.footer-section {
-  background-color: var(--color-background);
-  font-size: 1.4rem;
-  line-height: 2;
-  padding: 4rem 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "one one two two" "one one two two" "three three four four" "three three four four" "five five five five"; }
-
-.footer-section-social-media {
-  grid-area: one; }
-
-.footer-section-website-type {
-  grid-area: two; }
-
-.footer-section-tech-stack {
-  grid-area: three; }
-
-.footer-section-misc-links {
-  grid-area: four; }
-
-.footer-section-copyright {
-  grid-area: five; }
-
-/* Footer ends */
-/* 
-320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-1201px and more —  Extra large screens, TV
-*/

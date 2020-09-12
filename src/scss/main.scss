@@ -67,10 +67,10 @@ input {
   margin-left: 2.7rem;
   align-items: center;
   .fine-line {
-    position: absolute;
+    position: relative;
     height: 5.2rem;
     width: 1px;
-    left: 11.8rem;
+    left: 5rem;
     border-left: 1px solid #e3e3e3;
   }
   .nav-items-left {
@@ -152,7 +152,7 @@ input {
 }
 
 .nav-btn {
-  button {
+  .btn-signup {
     text-decoration: none;
     cursor: pointer;
     padding: 1.2rem 1.3rem;
@@ -169,18 +169,18 @@ input {
     transition: all 0.1s;
     &:hover {
       border: 1px solid var(--color-primary);
-      background: var(--color-background);
+      background: var(--color-white);
       color: var(--color-primary);
       box-shadow: 8px 8px 20px rgba(var(--color-black), 0.25);
     }
     &:focus {
       border: 1px solid var(--color-primary);
-      background: var(--color-background);
+      background: var(--color-white);
       color: var(--color-primary);
       box-shadow: 8px 8px 20px rgba(var(--color-black), 0.25);
     }
     &:active {
-      box-shadow: inset 10px 10px 20px rgba(var(--color-black), 0.1);
+      box-shadow: inset 2px 2px 5px rgba(var(--color-black), 0.1);
     }
   }
 }
@@ -222,7 +222,8 @@ input {
 
     .calculation-section {
       margin-top: 5rem;
-      button {
+      .btn-lumpsum,
+      .btn-sip {
         position: relative;
         background-color: transparent;
         font-size: 2.6rem;
@@ -311,6 +312,7 @@ input {
           color: var(--color-white);
           background-color: var(--color-primary);
           border: 1px solid var(--color-primary);
+          outline: none;
           &:nth-child(1) {
             margin-right: 4rem;
           }
@@ -324,6 +326,21 @@ input {
             color: var(--color-year-button);
             background-color: var(--color-white);
             border: 1px solid var(--color-year-button);
+          }
+          &:hover {
+            border: 1px solid var(--color-primary);
+            background: var(--color-white);
+            color: var(--color-primary);
+            box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1);
+          }
+          &:focus {
+            border: 1px solid var(--color-primary);
+            background: var(--color-white);
+            color: var(--color-primary);
+            box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1);
+          }
+          &:active {
+            box-shadow: inset 2px 2px 5px rgba(var(--color-black), 0.1);
           }
         }
       }
@@ -372,15 +389,31 @@ input {
           font-size: 2rem;
           font-weight: 700;
           border: 2px solid var(--color-primary);
-        }
-        button:nth-child(1) {
-          color: var(--color-white);
-          background-color: var(--color-primary);
-          margin-right: 5rem;
-        }
-        button:nth-child(2) {
-          color: var(--color-primary);
-          background-color: var(--color-white);
+          outline: none;
+          &:nth-child(1) {
+            color: var(--color-white);
+            background-color: var(--color-primary);
+            margin-right: 5rem;
+          }
+          &:nth-child(2) {
+            color: var(--color-primary);
+            background-color: var(--color-white);
+          }
+          &:hover {
+            border: 2px solid var(--color-primary);
+            background: var(--color-white);
+            color: var(--color-primary);
+            box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1);
+          }
+          &:focus {
+            border: 2px solid var(--color-primary);
+            background: var(--color-white);
+            color: var(--color-primary);
+            box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1);
+          }
+          &:active {
+            box-shadow: inset 1px 1px 2px rgba(var(--color-black), 0.1);
+          }
         }
       }
     }
@@ -486,6 +519,8 @@ input {
         margin-top: 4rem;
         height: 5.5rem;
         input {
+          outline: none;
+          color: rgba(51, 63, 82, 0.7);
           text-align: center;
           font-size: 4rem;
           font-weight: 600;
@@ -539,6 +574,21 @@ input {
         background: var(--color-primary);
         font-size: 2rem;
         font-weight: 600;
+        &:hover {
+          border: 2px solid var(--color-primary);
+          background: var(--color-white);
+          color: var(--color-primary);
+          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1);
+        }
+        &:focus {
+          border: 2px solid var(--color-primary);
+          background: var(--color-white);
+          color: var(--color-primary);
+          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1);
+        }
+        &:active {
+          box-shadow: inset 1px 1px 2px rgba(var(--color-black), 0.1);
+        }
       }
     }
   }
@@ -546,48 +596,9 @@ input {
 
 /* Plan your Investment Section ends here */
 
-/* Footer */
-.footer-section {
-  background-color: var(--color-background);
-  font-size: 1.4rem;
-  line-height: 2;
-  padding: 4rem 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "one one two two"
-    "one one two two"
-    "three three four four"
-    "three three four four"
-    "five five five five";
+@media screen and (max-width: 1023px) and (min-width: 768px) {
 }
-
-.footer-section-social-media {
-  grid-area: one;
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
 }
-
-.footer-section-website-type {
-  grid-area: two;
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
 }
-
-.footer-section-tech-stack {
-  grid-area: three;
-}
-
-.footer-section-misc-links {
-  grid-area: four;
-}
-
-.footer-section-copyright {
-  grid-area: five;
-}
-
-/* Footer ends */
-/* 
-320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-1201px and more —  Extra large screens, TV
-*/
