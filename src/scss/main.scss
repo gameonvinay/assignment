@@ -204,7 +204,7 @@ input {
   margin-right: 6.5vw;
   padding-bottom: 4.2vw;
   display: grid;
-  grid-template-columns: 5fr 25.31vw;
+  grid-template-columns: 62vw 25.31vw;
   .left-section {
     h1 {
       font-size: 3rem;
@@ -522,7 +522,7 @@ input {
     margin-left: 7.29vw;
     h1 {
       color: var(--color-black);
-      font-size: 30px;
+      font-size: 3rem;
     }
     .bottom-white-div {
       margin-top: 3.64vw;
@@ -539,8 +539,6 @@ input {
         p {
           display: block;
           font-size: 2.4rem;
-          text-align: center;
-          height: 6vw;
           text-align: center;
           padding: 2.1vw 2.08vw 2.08vw 2.08vw;
         }
@@ -635,12 +633,9 @@ input {
 
 /* Media Queries */
 
-@media only screen and (min-width: 1370px) and (max-width: 1650px) {
+@media only screen and (min-width: 1368px) and (max-width: 1650px) {
   .main-header {
-    height: 7vw;
-  }
-  .nav-container {
-    top: 0.5vw;
+    height: 7.5vw;
   }
 
   .nav-menu-left-container {
@@ -653,7 +648,7 @@ input {
   .main-section {
     margin-left: 4vw;
     margin-right: 2vw;
-    grid-template-columns: 5fr 30.31vw;
+    grid-template-columns: 1fr 30.31vw;
     .right-section {
       .youtube-video-container {
         width: 30.31vw;
@@ -676,9 +671,10 @@ input {
         .light-greyish-div {
           height: 9vw;
           padding: 0 10vw;
-          line-height: 42px;
+          line-height: 4.2rem;
           p {
             height: 9vw;
+            padding: 2.1vw 1.5vw 2.08vw 1.5vw;
           }
         }
       }
@@ -686,6 +682,65 @@ input {
   }
 }
 
-@media screen and (max-width: 1366px) and (min-width: 768px) {
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-header {
+    height: 10vw;
+  }
+
+  .nav-menu-left-container {
+    margin-left: 2.45vw;
+  }
+  .nav-menu-right-container {
+    margin-right: 0.9vw;
+  }
+
+  .main-section {
+    margin-left: 4vw;
+    margin-right: 2vw;
+    grid-template-columns: 1fr 30.31vw;
+    .left-section {
+      .did-you-know {
+        font-size: 2rem;
+      }
+    }
+    .right-section {
+      .youtube-video-container {
+        width: 30.31vw;
+        height: 18.62vw;
+        .heading-youtube-bg {
+          width: 30.31vw;
+          span {
+            padding-left: 2vw;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-section {
+    height: 41.5vw;
+    .bottom-greyish-div {
+      .bottom-white-div {
+        height: 32vw;
+        .light-greyish-div {
+          height: 9.5vw;
+          padding: 0 10vw;
+          line-height: 4.2rem;
+          p {
+            font-size: 2.6rem;
+            height: 9.5vw;
+            padding: 2.1vw 1.5vw 2.08vw 1.5vw;
+          }
+        }
+      }
+    }
+  }
+
   
 }
+
+

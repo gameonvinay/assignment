@@ -165,7 +165,7 @@ input {
   margin-right: 6.5vw;
   padding-bottom: 4.2vw;
   display: grid;
-  grid-template-columns: 5fr 25.31vw; }
+  grid-template-columns: 62vw 25.31vw; }
   .main-section .left-section h1 {
     font-size: 3rem;
     color: var(--color-text); }
@@ -415,7 +415,7 @@ input {
     margin-left: 7.29vw; }
     .bottom-section .bottom-greyish-div h1 {
       color: var(--color-black);
-      font-size: 30px; }
+      font-size: 3rem; }
     .bottom-section .bottom-greyish-div .bottom-white-div {
       margin-top: 3.64vw;
       border-radius: 1rem;
@@ -431,8 +431,6 @@ input {
         .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
           display: block;
           font-size: 2.4rem;
-          text-align: center;
-          height: 6vw;
           text-align: center;
           padding: 2.1vw 2.08vw 2.08vw 2.08vw; }
       .bottom-section .bottom-greyish-div .bottom-white-div h3 {
@@ -504,11 +502,9 @@ input {
 
 /* Plan your Investment Section ends here */
 /* Media Queries */
-@media only screen and (min-width: 1370px) and (max-width: 1650px) {
+@media only screen and (min-width: 1368px) and (max-width: 1650px) {
   .main-header {
-    height: 7vw; }
-  .nav-container {
-    top: 0.5vw; }
+    height: 7.5vw; }
   .nav-menu-left-container {
     margin-left: 2.45vw; }
   .nav-menu-right-container {
@@ -516,7 +512,7 @@ input {
   .main-section {
     margin-left: 4vw;
     margin-right: 2vw;
-    grid-template-columns: 5fr 30.31vw; }
+    grid-template-columns: 1fr 30.31vw; }
     .main-section .right-section .youtube-video-container {
       width: 30.31vw;
       height: 18.62vw; }
@@ -531,6 +527,42 @@ input {
       .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
         height: 9vw;
         padding: 0 10vw;
-        line-height: 42px; }
+        line-height: 4.2rem; }
         .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
-          height: 9vw; } }
+          height: 9vw;
+          padding: 2.1vw 1.5vw 2.08vw 1.5vw; } }
+
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  html {
+    font-size: 50%; }
+  .main-header {
+    height: 10vw; }
+  .nav-menu-left-container {
+    margin-left: 2.45vw; }
+  .nav-menu-right-container {
+    margin-right: 0.9vw; }
+  .main-section {
+    margin-left: 4vw;
+    margin-right: 2vw;
+    grid-template-columns: 1fr 30.31vw; }
+    .main-section .left-section .did-you-know {
+      font-size: 2rem; }
+    .main-section .right-section .youtube-video-container {
+      width: 30.31vw;
+      height: 18.62vw; }
+      .main-section .right-section .youtube-video-container .heading-youtube-bg {
+        width: 30.31vw; }
+        .main-section .right-section .youtube-video-container .heading-youtube-bg span {
+          padding-left: 2vw; }
+  .bottom-section {
+    height: 41.5vw; }
+    .bottom-section .bottom-greyish-div .bottom-white-div {
+      height: 32vw; }
+      .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
+        height: 9.5vw;
+        padding: 0 10vw;
+        line-height: 4.2rem; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
+          font-size: 2.6rem;
+          height: 9.5vw;
+          padding: 2.1vw 1.5vw 2.08vw 1.5vw; } }
