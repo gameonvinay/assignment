@@ -1,7 +1,7 @@
 {
-  "name": "www.gameondevs.com",
+  "name": "testing",
   "version": "1.0.0",
-  "description": "www.gameondevs.com",
+  "description": "Testing",
   "main": "main.js",
   "dependencies": {},
   "devDependencies": {
