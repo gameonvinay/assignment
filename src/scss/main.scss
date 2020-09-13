@@ -81,6 +81,17 @@ input {
       }
       a {
         color: var(--color-text);
+        &:hover {
+          color: var(--color-primary);
+        }
+        &:focus {
+          outline: none;
+          color: var(--color-primary);
+        }
+        &:active {
+          outline: none;
+          color: var(--color-primary);
+        }
       }
     }
   }
@@ -193,7 +204,7 @@ input {
   margin-right: 6.5vw;
   padding-bottom: 4.2vw;
   display: grid;
-  grid-template-columns: 5fr 48.5rem;
+  grid-template-columns: 5fr 25.31vw;
   .left-section {
     h1 {
       font-size: 3rem;
@@ -201,7 +212,7 @@ input {
     }
     p {
       font-size: 2.2rem;
-      line-height: 2.2vw;
+      line-height: 42px;
       margin-top: 1.15vw;
       max-width: 53vw;
     }
@@ -223,6 +234,7 @@ input {
       margin-top: 2.35vw;
       .btn-lumpsum,
       .btn-sip {
+        cursor: pointer;
         position: relative;
         background-color: transparent;
         font-size: 2.6rem;
@@ -303,6 +315,7 @@ input {
       .button-years {
         margin-top: 1.82vw;
         button {
+          cursor: pointer;
           height: 6.4rem;
           width: 13.6rem;
           border-radius: 60px;
@@ -389,6 +402,7 @@ input {
       .investment-btns {
         margin-top: 4.06vw;
         button {
+          cursor: pointer;
           height: 6rem;
           width: 32.3rem;
           font-size: 2rem;
@@ -427,45 +441,61 @@ input {
     h2 {
       font-size: 3rem;
       color: var(--color-text);
-      margin-bottom: 3rem;
-    }
-    picture {
-      img {
-        width: 48.6rem;
-        height: 30rem;
-      }
+      margin-bottom: 1.56vw;
     }
     .youtube-video-container {
-      position: relative;
-      margin-bottom: 7rem;
+      cursor: pointer;
+      margin-bottom: 3.64vw;
+      width: 25.31vw;
+      height: 15.62vw;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 45px 1fr 3.33vw;
+      grid-template-areas:
+        "emptyone"
+        "icon"
+        "empty"
+        "heading";
+      background-image: url(/src/img/sharon-mccutcheon--8a5eJ1-mmQ-unsplash@2x.png);
+      background-size: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
       .youtube-icon {
-        position: absolute;
-        top: 50%;
-        right: 38%;
-        transform: translate(-50%, -50%);
+        grid-area: icon;
+        margin: 0 auto;
+        height: 100%;
+        vertical-align: middle;
       }
-      h3 {
-        position: absolute;
-        top: 88%;
-        left: 34%;
-        transform: translate(-50%, -50%);
-        font-size: 1.8rem;
-        color: var(--color-white);
-        font-weight: 400;
-        z-index: 1;
+      .spacer1 {
+        grid-area: emptyone;
       }
+
       .heading-youtube-bg {
-        position: absolute;
-        top: 88%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 6.4rem;
-        width: 48.6rem;
+        grid-area: heading;
+        display: block;
+        height: 3.33vw;
+        width: 25.31vw;
+        line-height: 3vw;
         background: linear-gradient(
           to bottom,
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.8)
         );
+
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: normal;
+          font-size: 18px;
+          color: var(--color-white);
+          font-weight: 400;
+          z-index: 1;
+          padding-left: 1.5vw;
+        }
+      }
+      .spacer2 {
+        grid-area: empty;
       }
     }
     h2 {
@@ -473,7 +503,8 @@ input {
       color: var(--color-text);
     }
     p {
-      margin-top: 3.5rem;
+      cursor: pointer;
+      margin-top: 1.82vw;
       font-size: 2rem;
       color: var(--color-primary);
     }
@@ -511,7 +542,7 @@ input {
           text-align: center;
           height: 6vw;
           text-align: center;
-          padding: 2.2vw 2.08vw 2.08vw 2.08vw;
+          padding: 2.1vw 2.08vw 2.08vw 2.08vw;
         }
       }
       h3 {
@@ -570,6 +601,7 @@ input {
         }
       }
       .btn-next-investment {
+        cursor: pointer;
         border: none;
         outline: none;
         margin-top: 4.8vw;
@@ -604,10 +636,56 @@ input {
 /* Media Queries */
 
 @media only screen and (min-width: 1370px) and (max-width: 1650px) {
+  .main-header {
+    height: 7vw;
+  }
+  .nav-container {
+    top: 0.5vw;
+  }
+
+  .nav-menu-left-container {
+    margin-left: 2.45vw;
+  }
+  .nav-menu-right-container {
+    margin-right: 0.9vw;
+  }
+
   .main-section {
+    margin-left: 4vw;
+    margin-right: 2vw;
+    grid-template-columns: 5fr 30.31vw;
     .left-section {
       h1 {
         color: green;
+      }
+    }
+    .right-section {
+      .youtube-video-container {
+        width: 30.31vw;
+        height: 18.62vw;
+        .heading-youtube-bg {
+          width: 30.31vw;
+          span {
+            padding-left: 2vw;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-section {
+    height: 44vw;
+    .bottom-greyish-div {
+      .bottom-white-div {
+        height: 30vw;
+        .light-greyish-div {
+          height: 9vw;
+          padding: 0 10vw;
+          line-height: 42px;
+          p {
+            height: 9vw;
+          }
+        }
       }
     }
   }
