@@ -24,6 +24,7 @@ body {
   font-size: 1.6rem;
   font-family: "Open sans", sans-serif;
   width: 100%;
+  height: 200vh;
   color: var(--color-text-nav);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
@@ -292,41 +293,37 @@ input {
           box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1); }
     .main-section .left-section .calculation-section .line-under-year-btns {
       margin-top: 2.08vw;
-      margin-bottom: 1.45vw;
+      margin-bottom: 1.28vw;
       display: block;
       border-top: 2px solid #e3e3e3;
       height: 1px;
       width: 56.66vw; }
-    .main-section .left-section .calculation-section .flexbox-text-1 {
-      display: flex;
+    .main-section .left-section .calculation-section .flexboxes-layout-change-mobile {
+      display: grid;
+      font-size: 2.4rem;
+      font-weight: 600;
       width: 56.66vw;
-      justify-content: space-between; }
-      .main-section .left-section .calculation-section .flexbox-text-1 span:nth-child(1) {
-        padding-top: 1.5rem;
-        display: block;
-        font-size: 2.4rem;
-        font-weight: 600; }
-      .main-section .left-section .calculation-section .flexbox-text-1 span:nth-child(2) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 5rem 4rem;
+      grid-template-areas: "box1 box3" "box2 box4"; }
+      .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(1) {
+        grid-area: box1;
+        padding-top: 1.5rem; }
+      .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(2) {
+        grid-area: box2;
+        padding-bottom: 0.7rem; }
+      .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(3) {
+        grid-area: box3;
+        padding-top: 0.7rem;
+        text-align: right;
         color: var(--color-primary);
-        font-size: 3.4rem;
-        font-weight: 600;
-        display: block; }
-    .main-section .left-section .calculation-section .flexbox-text-2 {
-      display: flex;
-      height: 3rem;
-      width: 56.66vw;
-      justify-content: space-between; }
-      .main-section .left-section .calculation-section .flexbox-text-2 span:nth-child(1) {
-        display: block;
-        font-size: 2.4rem;
-        font-weight: 600; }
-      .main-section .left-section .calculation-section .flexbox-text-2 span:nth-child(2) {
-        display: block;
-        margin-top: 0.5rem;
-        font-size: 2.4rem;
-        font-weight: 600; }
+        font-size: 3.4rem; }
+      .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(4) {
+        grid-area: box4;
+        text-align: right;
+        margin-top: 0.5rem; }
     .main-section .left-section .calculation-section .investment-btns {
-      margin-top: 4.06vw; }
+      margin-top: 3.55vw; }
       .main-section .left-section .calculation-section .investment-btns button {
         cursor: pointer;
         height: 6rem;
@@ -522,15 +519,18 @@ input {
           padding-left: 2vw; }
   .bottom-section {
     height: 44vw; }
-    .bottom-section .bottom-greyish-div .bottom-white-div {
-      height: 30vw; }
-      .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
-        height: 9vw;
-        padding: 0 10vw;
-        line-height: 4.2rem; }
-        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
+    .bottom-section .bottom-greyish-div {
+      margin-left: 3.8vw; }
+      .bottom-section .bottom-greyish-div .bottom-white-div {
+        height: 30vw;
+        width: 92.4vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
           height: 9vw;
-          padding: 2.1vw 1.5vw 2.08vw 1.5vw; } }
+          padding: 0 10vw;
+          line-height: 4.2rem; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
+            height: 9vw;
+            padding: 2.1vw 1.5vw 2.08vw 1.5vw; } }
 
 @media screen and (max-width: 1366px) and (min-width: 1024px) {
   html {
@@ -556,18 +556,21 @@ input {
           padding-left: 2vw; }
   .bottom-section {
     height: 50vw; }
-    .bottom-section .bottom-greyish-div .bottom-white-div {
-      height: 35vw; }
-      .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
-        height: 9.5vw;
-        padding: 0 10vw;
-        line-height: 4.2rem; }
-        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
-          font-size: 2.6rem;
+    .bottom-section .bottom-greyish-div {
+      margin-left: 3.8vw; }
+      .bottom-section .bottom-greyish-div .bottom-white-div {
+        height: 35vw;
+        width: 92.4vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
           height: 9.5vw;
-          padding: 2.1vw 1.5vw 2.08vw 1.5vw; }
-      .bottom-section .bottom-greyish-div .bottom-white-div h3 {
-        margin-top: 3.2vw; } }
+          padding: 0 10vw;
+          line-height: 4.2rem; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
+            font-size: 2.6rem;
+            height: 9.5vw;
+            padding: 2.1vw 1.5vw 2.08vw 1.5vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div h3 {
+          margin-top: 3.2vw; } }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   html {
@@ -593,6 +596,26 @@ input {
       height: unset; }
       .main-section .left-section .calculation-section .flexbox-text-2 span:nth-child(2) {
         margin: 0; }
+    .main-section .left-section .calculation-section .flexboxes-layout-change-mobile {
+      width: 56.66vw;
+      grid-template-columns: max-content max-content 1fr 1fr;
+      grid-template-rows: 5rem 5rem;
+      grid-template-areas: "box1 box2 box2 box2" "box3 box3 box4 box4";
+      grid-gap: 1rem; }
+      .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(1) {
+        grid-area: box1;
+        padding-top: 1.5rem; }
+      .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(2) {
+        grid-area: box2;
+        padding-top: 1.5rem; }
+      .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(3) {
+        grid-area: box3;
+        padding-top: 0.7rem;
+        text-align: left; }
+      .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(4) {
+        grid-area: box4;
+        text-align: left;
+        margin-top: 1.7rem; }
     .main-section .left-section .calculation-section .investment-btns button {
       width: 31rem; }
       .main-section .left-section .calculation-section .investment-btns button:nth-child(1) {
@@ -606,20 +629,23 @@ input {
           padding-left: 2vw; }
   .bottom-section {
     height: 55vw; }
-    .bottom-section .bottom-greyish-div .bottom-white-div {
-      height: 38vw; }
-      .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
-        height: 9.5vw;
-        padding: 0 10vw;
-        line-height: 3.5rem; }
-        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
-          font-size: 2vw;
+    .bottom-section .bottom-greyish-div {
+      margin-left: 3.8vw; }
+      .bottom-section .bottom-greyish-div .bottom-white-div {
+        height: 35vw;
+        width: 92.4vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
           height: 9.5vw;
-          padding: 2.1vw 1vw 2.08vw 1vw; }
-      .bottom-section .bottom-greyish-div .bottom-white-div h3 {
-        margin-top: 3.2vw; }
-      .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div {
-        height: 4vw; } }
+          padding: 0 10vw;
+          line-height: 3.5rem; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
+            font-size: 2vw;
+            height: 9.5vw;
+            padding: 2.1vw 1vw 2.08vw 1vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div h3 {
+          margin-top: 3.2vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div {
+          height: 4vw; } }
 
 @media screen and (max-width: 767px) and (min-width: 600px) {
   html {
@@ -655,9 +681,12 @@ input {
         .main-section .left-section .calculation-section .flexbox-text-2 span:nth-child(2) {
           margin: 0; }
       .main-section .left-section .calculation-section .expenditure-row {
+        width: 78vw;
         margin-top: 4.5vw; }
       .main-section .left-section .calculation-section .rangeslider {
-        margin-top: 4.5vw; }
+        width: 70vw;
+        margin-top: 4.5vw;
+        padding-right: 1vw; }
       .main-section .left-section .calculation-section .para-years {
         margin-top: 4.5vw; }
       .main-section .left-section .calculation-section .button-years {
@@ -665,10 +694,35 @@ input {
       .main-section .left-section .calculation-section .line-under-year-btns {
         margin-top: 4vw;
         margin-bottom: 4vw; }
-      .main-section .left-section .calculation-section .investment-btns button {
-        width: 33.5rem; }
-        .main-section .left-section .calculation-section .investment-btns button:nth-child(1) {
-          margin-right: 5rem; }
+      .main-section .left-section .calculation-section .flexboxes-layout-change-mobile {
+        width: 87vw;
+        grid-template-columns: max-content max-content 1fr 1fr;
+        grid-template-rows: 5rem 5rem;
+        grid-template-areas: "box1 box2 box2 box2" "box3 box3 box4 box4";
+        grid-gap: 1rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(1) {
+          grid-area: box1;
+          padding-top: 1.5rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(2) {
+          grid-area: box2;
+          padding-top: 1.5rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(3) {
+          grid-area: box3;
+          padding-top: 0.7rem;
+          text-align: left; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(4) {
+          grid-area: box4;
+          text-align: left;
+          margin-top: 1.7rem; }
+      .main-section .left-section .calculation-section .investment-btns {
+        display: flex;
+        flex-direction: column; }
+        .main-section .left-section .calculation-section .investment-btns button {
+          height: 7rem;
+          border-radius: 3px;
+          width: 87vw; }
+          .main-section .left-section .calculation-section .investment-btns button:nth-child(1) {
+            margin-bottom: 2rem; }
     .main-section .right-section {
       margin-top: 5vw; }
       .main-section .right-section .youtube-video-container {
@@ -686,24 +740,27 @@ input {
         margin-top: 3vw;
         font-size: 2.2rem; }
   .bottom-section {
-    height: 60vw; }
-    .bottom-section .bottom-greyish-div .bottom-white-div {
-      height: 45vw; }
-      .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
-        height: 10.5vw;
-        padding: 0 3vw;
-        line-height: 3.5rem; }
-        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
-          font-size: 2rem;
-          height: 9.5vw;
-          padding: 2.1vw 0 2.08vw 0; }
-      .bottom-section .bottom-greyish-div .bottom-white-div h3 {
-        margin-top: 3.2vw; }
-      .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div {
-        height: 6vw; } }
+    height: 65vw; }
+    .bottom-section .bottom-greyish-div {
+      margin-left: 6vw; }
+      .bottom-section .bottom-greyish-div .bottom-white-div {
+        height: 50vw;
+        width: 87vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
+          height: 10.5vw;
+          padding: 0 3vw;
+          line-height: 3.5rem; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
+            font-size: 2rem;
+            height: 9.5vw;
+            padding: 2.1vw 0 2.08vw 0; }
+        .bottom-section .bottom-greyish-div .bottom-white-div h3 {
+          margin-top: 3.2vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div {
+          height: 6vw; } }
 
-/* Experimental layout lower than 600px */
-@media screen and (max-width: 599px) and (min-width: 500px) {
+/* Experimental layout for devices 599px to 480px */
+@media screen and (max-width: 599px) and (min-width: 480px) {
   html {
     font-size: 45%; }
   .main-header {
@@ -737,9 +794,12 @@ input {
         .main-section .left-section .calculation-section .flexbox-text-2 span:nth-child(2) {
           margin: 0; }
       .main-section .left-section .calculation-section .expenditure-row {
+        width: 78vw;
         margin-top: 4.5vw; }
       .main-section .left-section .calculation-section .rangeslider {
-        margin-top: 4.5vw; }
+        width: 70vw;
+        margin-top: 4.5vw;
+        padding-right: 1vw; }
       .main-section .left-section .calculation-section .para-years {
         margin-top: 4.5vw; }
       .main-section .left-section .calculation-section .button-years {
@@ -747,10 +807,35 @@ input {
       .main-section .left-section .calculation-section .line-under-year-btns {
         margin-top: 4vw;
         margin-bottom: 4vw; }
-      .main-section .left-section .calculation-section .investment-btns button {
-        width: 33.5rem; }
-        .main-section .left-section .calculation-section .investment-btns button:nth-child(1) {
-          margin-right: 5rem; }
+      .main-section .left-section .calculation-section .flexboxes-layout-change-mobile {
+        width: 87vw;
+        grid-template-columns: max-content max-content 1fr 1fr;
+        grid-template-rows: 5rem 5rem;
+        grid-template-areas: "box1 box2 box2 box2" "box3 box3 box4 box4";
+        grid-gap: 1rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(1) {
+          grid-area: box1;
+          padding-top: 1.5rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(2) {
+          grid-area: box2;
+          padding-top: 1.5rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(3) {
+          grid-area: box3;
+          padding-top: 0.7rem;
+          text-align: left; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(4) {
+          grid-area: box4;
+          text-align: left;
+          margin-top: 1.7rem; }
+      .main-section .left-section .calculation-section .investment-btns {
+        display: flex;
+        flex-direction: column; }
+        .main-section .left-section .calculation-section .investment-btns button {
+          height: 7rem;
+          border-radius: 3px;
+          width: 87vw; }
+          .main-section .left-section .calculation-section .investment-btns button:nth-child(1) {
+            margin-bottom: 2rem; }
     .main-section .right-section {
       margin-top: 5vw; }
       .main-section .right-section .youtube-video-container {
@@ -763,23 +848,324 @@ input {
           line-height: 11vw; }
           .main-section .right-section .youtube-video-container .heading-youtube-bg span {
             padding-left: 6vw;
-            font-size: 2.6vw; }
+            font-size: 3.2vw; }
       .main-section .right-section p {
         margin-top: 3vw;
         font-size: 2.2rem; }
   .bottom-section {
-    height: 60vw; }
-    .bottom-section .bottom-greyish-div .bottom-white-div {
-      height: 45vw; }
-      .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
-        height: 10.5vw;
-        padding: 0 3vw;
-        line-height: 3.5rem; }
-        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
-          font-size: 2rem;
-          height: 9.5vw;
-          padding: 2.1vw 0 2.08vw 0; }
-      .bottom-section .bottom-greyish-div .bottom-white-div h3 {
-        margin-top: 3.2vw; }
-      .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div {
-        height: 6vw; } }
+    height: 90vw; }
+    .bottom-section .bottom-greyish-div {
+      margin-left: 6vw; }
+      .bottom-section .bottom-greyish-div .bottom-white-div {
+        height: 65vw;
+        width: 87vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
+          height: 20vw;
+          padding: 0 11vw;
+          line-height: 3.5rem; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
+            font-size: 2rem;
+            height: 9.5vw;
+            padding: 2.1vw 0 2.08vw 0; }
+        .bottom-section .bottom-greyish-div .bottom-white-div h3 {
+          margin-top: 3.2vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div {
+          margin-top: 4vw;
+          height: 6vw; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div input {
+            font-size: 3rem; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .btn-next-investment {
+          margin-top: 10vw;
+          width: 30rem; } }
+
+@media screen and (max-width: 479px) and (min-width: 420px) {
+  html {
+    font-size: 45%; }
+  .main-header {
+    height: 10vw; }
+  .nav-container {
+    padding: 3vw; }
+  .nav-menu-left-container {
+    margin-left: 2.45vw; }
+    .nav-menu-left-container .nav-items-left {
+      display: none; }
+  .nav-menu-right-container {
+    margin-right: 0.9vw; }
+    .nav-menu-right-container .nav-items-right {
+      display: none; }
+  .main-section {
+    margin-top: 10vw;
+    margin-left: 6vw;
+    margin-right: 2vw;
+    grid-template-columns: 1fr; }
+    .main-section .left-section h1 {
+      font-size: 2.6rem; }
+    .main-section .left-section p {
+      max-width: 87vw; }
+    .main-section .left-section .did-you-know {
+      font-size: 2rem; }
+    .main-section .left-section .calculation-section {
+      margin-top: 4vw; }
+      .main-section .left-section .calculation-section .flexbox-text-1 {
+        width: 87vw; }
+      .main-section .left-section .calculation-section .flexbox-text-2 {
+        width: 87vw;
+        height: unset; }
+        .main-section .left-section .calculation-section .flexbox-text-2 span:nth-child(2) {
+          margin: 0; }
+      .main-section .left-section .calculation-section .expenditure-row {
+        width: 83vw;
+        margin-top: 4.5vw; }
+      .main-section .left-section .calculation-section .rangeslider {
+        width: 75vw;
+        margin-top: 4.5vw;
+        padding-right: 1vw; }
+      .main-section .left-section .calculation-section .para-years {
+        margin-top: 4.5vw; }
+      .main-section .left-section .calculation-section .button-years {
+        margin-top: 3vw; }
+      .main-section .left-section .calculation-section .line-under-year-btns {
+        margin-top: 6vw;
+        margin-bottom: 4vw; }
+      .main-section .left-section .calculation-section .flexboxes-layout-change-mobile {
+        width: 87vw;
+        grid-template-columns: max-content max-content 1fr 1fr;
+        grid-template-rows: 5rem 5rem 5rem;
+        grid-template-areas: "box1 box2 box2 box2" "box3 box3 box3 box3" "box4 box4 box4 box4";
+        grid-gap: 1rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(1) {
+          grid-area: box1;
+          padding-top: 1.5rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(2) {
+          grid-area: box2;
+          padding-top: 1.5rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(3) {
+          grid-area: box3;
+          padding-top: 0.7rem;
+          text-align: left; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(4) {
+          grid-area: box4;
+          text-align: left;
+          margin-top: 0; }
+      .main-section .left-section .calculation-section .investment-btns {
+        display: flex;
+        flex-direction: column; }
+        .main-section .left-section .calculation-section .investment-btns button {
+          height: 7rem;
+          border-radius: 3px;
+          width: 87vw; }
+          .main-section .left-section .calculation-section .investment-btns button:nth-child(1) {
+            margin-bottom: 2rem; }
+    .main-section .right-section {
+      margin-top: 15vw;
+      margin-bottom: 10vw; }
+      .main-section .right-section .youtube-video-container {
+        width: 87vw;
+        height: 53.5vw;
+        grid-template-rows: 2fr 45px 1fr 11.42vw; }
+        .main-section .right-section .youtube-video-container .heading-youtube-bg {
+          width: 87vw;
+          height: 11.42vw;
+          line-height: 11vw; }
+          .main-section .right-section .youtube-video-container .heading-youtube-bg span {
+            padding-left: 6vw;
+            font-size: 3.6vw; }
+      .main-section .right-section p {
+        margin-top: 3vw;
+        font-size: 2.2rem; }
+  .bottom-section {
+    height: 150vw;
+    padding-top: 10vw; }
+    .bottom-section .bottom-greyish-div {
+      margin-left: 6vw; }
+      .bottom-section .bottom-greyish-div .bottom-white-div {
+        margin-top: 6vw;
+        height: 120vw;
+        width: 87vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
+          height: 25vw;
+          padding: 0 5vw;
+          line-height: 3.5rem; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
+            text-align: left;
+            font-size: 2rem;
+            height: 9.5vw;
+            padding: 3vw 0 2.08vw 0; }
+        .bottom-section .bottom-greyish-div .bottom-white-div h3 {
+          margin-top: 3.2vw;
+          margin-top: 10vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div {
+          margin-top: 4vw;
+          height: 6vw; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div input {
+            font-size: 3rem;
+            display: block;
+            align-items: center; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .input-one-investment {
+            margin: 0 auto;
+            width: 60vw; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .input-two-years {
+            margin: 0 auto;
+            width: 60vw; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .in-next-year {
+            margin-top: 3vw;
+            margin-bottom: 6vw;
+            display: block; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .no-of-years {
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+            display: block; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .btn-next-investment {
+          margin-top: 45vw;
+          width: 60vw; } }
+
+@media screen and (max-width: 419px) and (min-width: 320px) {
+  html {
+    font-size: 45%; }
+  .main-header {
+    height: 10vw; }
+  .nav-container {
+    padding: 3vw; }
+  .nav-menu-left-container {
+    margin-left: 2.45vw; }
+    .nav-menu-left-container .nav-items-left {
+      display: none; }
+  .nav-menu-right-container {
+    margin-right: 0.9vw; }
+    .nav-menu-right-container .nav-items-right {
+      display: none; }
+  .main-section {
+    margin-top: 10vw;
+    margin-left: 6vw;
+    margin-right: 2vw;
+    grid-template-columns: 1fr; }
+    .main-section .left-section h1 {
+      font-size: 2.6rem; }
+    .main-section .left-section p {
+      max-width: 87vw; }
+    .main-section .left-section .did-you-know {
+      font-size: 2rem; }
+    .main-section .left-section .calculation-section {
+      margin-top: 4vw; }
+      .main-section .left-section .calculation-section .flexbox-text-1 {
+        width: 87vw; }
+      .main-section .left-section .calculation-section .flexbox-text-2 {
+        width: 87vw;
+        height: unset; }
+        .main-section .left-section .calculation-section .flexbox-text-2 span:nth-child(2) {
+          margin: 0; }
+      .main-section .left-section .calculation-section .expenditure-row {
+        width: 83vw;
+        margin-top: 4.5vw; }
+      .main-section .left-section .calculation-section .rangeslider {
+        width: 75vw;
+        margin-top: 4.5vw;
+        padding-right: 1vw; }
+      .main-section .left-section .calculation-section .para-years {
+        margin-top: 4.5vw; }
+      .main-section .left-section .calculation-section .button-years {
+        margin-top: 3vw; }
+      .main-section .left-section .calculation-section .line-under-year-btns {
+        margin-top: 6vw;
+        margin-bottom: 4vw; }
+      .main-section .left-section .calculation-section .button-years button {
+        height: 6rem;
+        width: 12rem; }
+      .main-section .left-section .calculation-section .flexboxes-layout-change-mobile {
+        width: 87vw;
+        grid-template-columns: max-content;
+        grid-template-rows: 5rem 5rem 5rem 5rem;
+        grid-template-areas: "box1"  "box2" "box3" "box4";
+        grid-gap: 1rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(1) {
+          grid-area: box1;
+          padding-top: 1.5rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(2) {
+          grid-area: box2;
+          padding-top: 0rem;
+          margin-top: -1rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(3) {
+          grid-area: box3;
+          padding-top: 0;
+          text-align: left;
+          margin-top: -2rem; }
+        .main-section .left-section .calculation-section .flexboxes-layout-change-mobile span:nth-child(4) {
+          grid-area: box4;
+          text-align: left;
+          margin-top: -3rem; }
+      .main-section .left-section .calculation-section .investment-btns {
+        margin-top: 1vw;
+        display: flex;
+        flex-direction: column; }
+        .main-section .left-section .calculation-section .investment-btns button {
+          height: 7rem;
+          border-radius: 3px;
+          width: 87vw; }
+          .main-section .left-section .calculation-section .investment-btns button:nth-child(1) {
+            margin-bottom: 2rem; }
+    .main-section .right-section {
+      margin-top: 15vw;
+      margin-bottom: 10vw; }
+      .main-section .right-section .youtube-video-container {
+        width: 87vw;
+        height: 53.5vw;
+        grid-template-rows: 2fr 45px 1fr 11.42vw; }
+        .main-section .right-section .youtube-video-container .heading-youtube-bg {
+          width: 87vw;
+          height: 11.42vw;
+          line-height: 11vw; }
+          .main-section .right-section .youtube-video-container .heading-youtube-bg span {
+            padding-left: 6vw;
+            font-size: 4vw; }
+      .main-section .right-section h2 {
+        margin-top: 6vw; }
+      .main-section .right-section p {
+        margin-top: 5vw;
+        font-size: 2.2rem; }
+  .bottom-section {
+    height: 170vw;
+    padding-top: 5vw; }
+    .bottom-section .bottom-greyish-div {
+      margin-left: 0; }
+      .bottom-section .bottom-greyish-div h1 {
+        margin-left: 6vw; }
+      .bottom-section .bottom-greyish-div .bottom-white-div {
+        margin-top: 6vw;
+        height: 140vw;
+        width: 100vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
+          height: 30vw;
+          padding: 0 3vw 0 6vw;
+          line-height: 3.5rem; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
+            text-align: left;
+            font-size: 2rem;
+            height: 9.5vw;
+            padding: 3vw 0 2.08vw 0; }
+        .bottom-section .bottom-greyish-div .bottom-white-div h3 {
+          margin-top: 3.2vw;
+          margin-top: 10vw; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div {
+          margin-top: 4vw;
+          height: 6vw; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div input {
+            font-size: 3rem;
+            display: block;
+            align-items: center; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .input-one-investment {
+            margin: 0 auto;
+            width: 60vw; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .input-two-years {
+            margin: 0 auto;
+            width: 60vw; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .in-next-year {
+            margin-top: 3vw;
+            margin-bottom: 6vw;
+            display: block; }
+          .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .no-of-years {
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+            display: block; }
+        .bottom-section .bottom-greyish-div .bottom-white-div .btn-next-investment {
+          margin-top: 55vw;
+          width: 60vw; } }

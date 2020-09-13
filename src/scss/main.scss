@@ -29,6 +29,7 @@ body {
   font-size: 1.6rem;
   font-family: "Open sans", sans-serif;
   width: 100%;
+  height: 200vh;
   color: var(--color-text-nav);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
@@ -358,49 +359,47 @@ input {
       }
       .line-under-year-btns {
         margin-top: 2.08vw;
-        margin-bottom: 1.45vw;
+        margin-bottom: 1.28vw;
         display: block;
         border-top: 2px solid #e3e3e3;
         height: 1px;
         width: 56.66vw;
       }
-      .flexbox-text-1 {
-        display: flex;
+
+      .flexboxes-layout-change-mobile {
+        display: grid;
+        font-size: 2.4rem;
+        font-weight: 600;
         width: 56.66vw;
-        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5rem 4rem;
+        grid-template-areas:
+          "box1 box3"
+          "box2 box4";
         span:nth-child(1) {
+          grid-area: box1;
           padding-top: 1.5rem;
-          display: block;
-          font-size: 2.4rem;
-          font-weight: 600;
         }
         span:nth-child(2) {
+          grid-area: box2;
+          padding-bottom: 0.7rem;
+        }
+        span:nth-child(3) {
+          grid-area: box3;
+          padding-top: 0.7rem;
+          text-align: right;
           color: var(--color-primary);
           font-size: 3.4rem;
-          font-weight: 600;
-          display: block;
         }
-      }
-      .flexbox-text-2 {
-        display: flex;
-        height: 3rem;
-        width: 56.66vw;
-        justify-content: space-between;
-        span:nth-child(1) {
-          display: block;
-          font-size: 2.4rem;
-          font-weight: 600;
-        }
-        span:nth-child(2) {
-          display: block;
+        span:nth-child(4) {
+          grid-area: box4;
+          text-align: right;
           margin-top: 0.5rem;
-          font-size: 2.4rem;
-          font-weight: 600;
         }
       }
 
       .investment-btns {
-        margin-top: 4.06vw;
+        margin-top: 3.55vw;
         button {
           cursor: pointer;
           height: 6rem;
@@ -456,7 +455,9 @@ input {
         "icon"
         "empty"
         "heading";
-      background-image: url("/src/img/sharon-mccutcheon--8a5eJ1-mmQ-unsplash@2x.png" ), url(/src/img/sharon-mccutcheon--8a5eJ1-mmQ-unsplash@2x.png), url("/assignment/src/img/sharon-mccutcheon--8a5eJ1-mmQ-unsplash@2x.png");
+      background-image: url("/src/img/sharon-mccutcheon--8a5eJ1-mmQ-unsplash@2x.png"),
+        url(/src/img/sharon-mccutcheon--8a5eJ1-mmQ-unsplash@2x.png),
+        url("/assignment/src/img/sharon-mccutcheon--8a5eJ1-mmQ-unsplash@2x.png");
       background-size: cover;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
@@ -666,8 +667,10 @@ input {
   .bottom-section {
     height: 44vw;
     .bottom-greyish-div {
+      margin-left: 3.8vw;
       .bottom-white-div {
         height: 30vw;
+        width: 92.4vw;
         .light-greyish-div {
           height: 9vw;
           padding: 0 10vw;
@@ -724,8 +727,10 @@ input {
   .bottom-section {
     height: 50vw;
     .bottom-greyish-div {
+      margin-left: 3.8vw;
       .bottom-white-div {
         height: 35vw;
+        width: 92.4vw;
         .light-greyish-div {
           height: 9.5vw;
           padding: 0 10vw;
@@ -742,10 +747,7 @@ input {
       }
     }
   }
-
-  
 }
-
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   html {
@@ -785,6 +787,33 @@ input {
             margin: 0;
           }
         }
+        .flexboxes-layout-change-mobile {
+          width: 56.66vw;
+          grid-template-columns: max-content max-content 1fr 1fr;
+          grid-template-rows: 5rem 5rem;
+          grid-template-areas:
+            "box1 box2 box2 box2"
+            "box3 box3 box4 box4";
+          grid-gap: 1rem;
+          span:nth-child(1) {
+            grid-area: box1;
+            padding-top: 1.5rem;
+          }
+          span:nth-child(2) {
+            grid-area: box2;
+            padding-top: 1.5rem;
+          }
+          span:nth-child(3) {
+            grid-area: box3;
+            padding-top: 0.7rem;
+            text-align: left;
+          }
+          span:nth-child(4) {
+            grid-area: box4;
+            text-align: left;
+            margin-top: 1.7rem;
+          }
+        }
 
         .investment-btns {
           button {
@@ -813,8 +842,10 @@ input {
   .bottom-section {
     height: 55vw;
     .bottom-greyish-div {
+      margin-left: 3.8vw;
       .bottom-white-div {
-        height: 38vw;
+        height: 35vw;
+        width: 92.4vw;
         .light-greyish-div {
           height: 9.5vw;
           padding: 0 10vw;
@@ -834,10 +865,7 @@ input {
       }
     }
   }
-
-  
 }
-
 
 @media screen and (max-width: 767px) and (min-width: 600px) {
   html {
@@ -890,10 +918,13 @@ input {
           }
         }
         .expenditure-row {
+          width: 78vw;
           margin-top: 4.5vw;
         }
         .rangeslider {
+          width: 70vw;
           margin-top: 4.5vw;
+          padding-right: 1vw;
         }
         .para-years {
           margin-top: 4.5vw;
@@ -907,11 +938,43 @@ input {
           margin-bottom: 4vw;
         }
 
+        .flexboxes-layout-change-mobile {
+          width: 87vw;
+          grid-template-columns: max-content max-content 1fr 1fr;
+          grid-template-rows: 5rem 5rem;
+          grid-template-areas:
+            "box1 box2 box2 box2"
+            "box3 box3 box4 box4";
+          grid-gap: 1rem;
+          span:nth-child(1) {
+            grid-area: box1;
+            padding-top: 1.5rem;
+          }
+          span:nth-child(2) {
+            grid-area: box2;
+            padding-top: 1.5rem;
+          }
+          span:nth-child(3) {
+            grid-area: box3;
+            padding-top: 0.7rem;
+            text-align: left;
+          }
+          span:nth-child(4) {
+            grid-area: box4;
+            text-align: left;
+            margin-top: 1.7rem;
+          }
+        }
+
         .investment-btns {
+          display: flex;
+          flex-direction: column;
           button {
-            width: 33.5rem;
+            height: 7rem;
+            border-radius: 3px;
+            width: 87vw;
             &:nth-child(1) {
-              margin-right: 5rem;
+              margin-bottom: 2rem;
             }
           }
         }
@@ -941,10 +1004,12 @@ input {
   }
 
   .bottom-section {
-    height: 60vw;
+    height: 65vw;
     .bottom-greyish-div {
+      margin-left: 6vw;
       .bottom-white-div {
-        height: 45vw;
+        height: 50vw;
+        width: 87vw;
         .light-greyish-div {
           height: 10.5vw;
           padding: 0 3vw;
@@ -966,9 +1031,9 @@ input {
   }
 }
 
-/* Experimental layout lower than 600px */
+/* Experimental layout for devices 599px to 480px */
 
-@media screen and (max-width: 599px) and (min-width: 500px) {
+@media screen and (max-width: 599px) and (min-width: 480px) {
   html {
     font-size: 45%;
   }
@@ -1019,10 +1084,13 @@ input {
           }
         }
         .expenditure-row {
+          width: 78vw;
           margin-top: 4.5vw;
         }
         .rangeslider {
+          width: 70vw;
           margin-top: 4.5vw;
+          padding-right: 1vw;
         }
         .para-years {
           margin-top: 4.5vw;
@@ -1036,11 +1104,43 @@ input {
           margin-bottom: 4vw;
         }
 
+        .flexboxes-layout-change-mobile {
+          width: 87vw;
+          grid-template-columns: max-content max-content 1fr 1fr;
+          grid-template-rows: 5rem 5rem;
+          grid-template-areas:
+            "box1 box2 box2 box2"
+            "box3 box3 box4 box4";
+          grid-gap: 1rem;
+          span:nth-child(1) {
+            grid-area: box1;
+            padding-top: 1.5rem;
+          }
+          span:nth-child(2) {
+            grid-area: box2;
+            padding-top: 1.5rem;
+          }
+          span:nth-child(3) {
+            grid-area: box3;
+            padding-top: 0.7rem;
+            text-align: left;
+          }
+          span:nth-child(4) {
+            grid-area: box4;
+            text-align: left;
+            margin-top: 1.7rem;
+          }
+        }
+
         .investment-btns {
+          display: flex;
+          flex-direction: column;
           button {
-            width: 33.5rem;
+            height: 7rem;
+            border-radius: 3px;
+            width: 87vw;
             &:nth-child(1) {
-              margin-right: 5rem;
+              margin-bottom: 2rem;
             }
           }
         }
@@ -1058,7 +1158,7 @@ input {
           line-height: 11vw;
           span {
             padding-left: 6vw;
-            font-size: 2.6vw;
+            font-size: 3.2vw;
           }
         }
       }
@@ -1070,13 +1170,15 @@ input {
   }
 
   .bottom-section {
-    height: 60vw;
+    height: 90vw;
     .bottom-greyish-div {
+      margin-left: 6vw;        
       .bottom-white-div {
-        height: 45vw;
+        height: 65vw;
+        width: 87vw;
         .light-greyish-div {
-          height: 10.5vw;
-          padding: 0 3vw;
+          height: 20vw;
+          padding: 0 11vw;
           line-height: 3.5rem;
           p {
             font-size: 2rem;
@@ -1088,7 +1190,15 @@ input {
           margin-top: 3.2vw;
         }
         .input-align-div {
+          margin-top: 4vw;
           height: 6vw;
+          input {
+            font-size: 3rem;
+          }
+        }
+        .btn-next-investment {
+          margin-top: 10vw;
+          width: 30rem;
         }
       }
     }
@@ -1096,3 +1206,425 @@ input {
 }
 
 
+
+@media screen and (max-width: 479px) and (min-width: 420px) {
+  html {
+    font-size: 45%;
+  }
+
+  .main-header {
+    height: 10vw;
+  }
+
+  .nav-container {
+    padding: 3vw;
+  }
+
+  .nav-menu-left-container {
+    margin-left: 2.45vw;
+    .nav-items-left {
+      display: none;
+    }
+  }
+  .nav-menu-right-container {
+    margin-right: 0.9vw;
+    .nav-items-right {
+      display: none;
+    }
+  }
+
+  .main-section {
+    margin-top: 10vw;
+    margin-left: 6vw;
+    margin-right: 2vw;
+    grid-template-columns: 1fr;
+    .left-section {
+      h1 {
+        font-size: 2.6rem;
+      }
+      p {
+        max-width: 87vw;
+      }
+      .did-you-know {
+        font-size: 2rem;
+      }
+      .calculation-section {
+        margin-top: 4vw;
+        .flexbox-text-1 {
+          width: 87vw;
+        }
+        .flexbox-text-2 {
+          width: 87vw;
+          height: unset;
+          span:nth-child(2) {
+            margin: 0;
+          }
+        }
+        .expenditure-row {
+          width: 83vw;
+          margin-top: 4.5vw;
+        }
+        .rangeslider {
+          width: 75vw;
+          margin-top: 4.5vw;
+          padding-right: 1vw;
+        }
+        .para-years {
+          margin-top: 4.5vw;
+        }
+        .button-years {
+          margin-top: 3vw;
+        }
+
+        .line-under-year-btns {
+          margin-top: 6vw;
+          margin-bottom: 4vw;
+        }
+
+        .flexboxes-layout-change-mobile {
+          width: 87vw;
+          grid-template-columns: max-content max-content 1fr 1fr;
+          grid-template-rows: 5rem 5rem 5rem;
+          grid-template-areas:
+            "box1 box2 box2 box2"
+            "box3 box3 box3 box3"
+            "box4 box4 box4 box4";
+          grid-gap: 1rem;
+          span:nth-child(1) {
+            grid-area: box1;
+            padding-top: 1.5rem;
+          }
+          span:nth-child(2) {
+            grid-area: box2;
+            padding-top: 1.5rem;
+          }
+          span:nth-child(3) {
+            grid-area: box3;
+            padding-top: 0.7rem;
+            text-align: left;
+          }
+          span:nth-child(4) {
+            grid-area: box4;
+            text-align: left;
+            margin-top: 0;
+          }
+        }
+
+        .investment-btns {
+          display: flex;
+          flex-direction: column;
+          button {
+            height: 7rem;
+            border-radius: 3px;
+            width: 87vw;
+            &:nth-child(1) {
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+    }
+    .right-section {
+      margin-top: 15vw;
+      margin-bottom: 10vw;
+      .youtube-video-container {
+        width: 87vw;
+        height: 53.5vw;
+        grid-template-rows: 2fr 45px 1fr 11.42vw;
+        .heading-youtube-bg {
+          width: 87vw;
+          height: 11.42vw;
+          line-height: 11vw;
+          span {
+            padding-left: 6vw;
+            font-size: 3.6vw;
+          }
+        }
+      }
+      p {
+        margin-top: 3vw;
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  .bottom-section {
+    height: 150vw;
+    padding-top: 10vw;
+    .bottom-greyish-div {
+      margin-left: 6vw;        
+      .bottom-white-div {
+        margin-top: 6vw;
+        height: 120vw;
+        width: 87vw;
+        .light-greyish-div {
+          height: 25vw;
+          padding: 0 5vw;
+          line-height: 3.5rem;
+          p {
+            text-align: left;
+            font-size: 2rem;
+            height: 9.5vw;
+            padding: 3vw 0 2.08vw 0;
+          }
+        }
+        h3 {
+          margin-top: 3.2vw;
+          margin-top: 10vw;
+        }
+        .input-align-div {
+          margin-top: 4vw;
+          height: 6vw;
+          input {
+            font-size: 3rem;
+            display: block;
+            align-items: center;
+          }
+          .input-one-investment {
+            margin: 0 auto;
+            width: 60vw;
+          }
+          .input-two-years {
+            margin: 0 auto;
+            width: 60vw;
+          }
+
+          .in-next-year {
+            margin-top: 3vw;
+            margin-bottom: 6vw;
+            display: block;
+          }
+          .no-of-years {
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+            display: block;
+          }
+        }
+        .btn-next-investment {
+          margin-top: 45vw;
+          width: 60vw;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 419px) and (min-width: 320px) {
+  html {
+    font-size: 45%;
+  }
+
+  .main-header {
+    height: 10vw;
+  }
+
+  .nav-container {
+    padding: 3vw;
+  }
+
+  .nav-menu-left-container {
+    margin-left: 2.45vw;
+    .nav-items-left {
+      display: none;
+    }
+  }
+  .nav-menu-right-container {
+    margin-right: 0.9vw;
+    .nav-items-right {
+      display: none;
+    }
+  }
+
+  .main-section {
+    margin-top: 10vw;
+    margin-left: 6vw;
+    margin-right: 2vw;
+    grid-template-columns: 1fr;
+    .left-section {
+      h1 {
+        font-size: 2.6rem;
+      }
+      p {
+        max-width: 87vw;
+      }
+      .did-you-know {
+        font-size: 2rem;
+      }
+      .calculation-section {
+        margin-top: 4vw;
+        .flexbox-text-1 {
+          width: 87vw;
+        }
+        .flexbox-text-2 {
+          width: 87vw;
+          height: unset;
+          span:nth-child(2) {
+            margin: 0;
+          }
+        }
+        .expenditure-row {
+          width: 83vw;
+          margin-top: 4.5vw;
+        }
+        .rangeslider {
+          width: 75vw;
+          margin-top: 4.5vw;
+          padding-right: 1vw;
+        }
+        .para-years {
+          margin-top: 4.5vw;
+        }
+        .button-years {
+          margin-top: 3vw;
+        }
+
+        .line-under-year-btns {
+          margin-top: 6vw;
+          margin-bottom: 4vw;
+        }
+
+        .button-years {
+          button {
+            height: 6rem;
+            width: 12rem;
+          }
+        }
+
+        .flexboxes-layout-change-mobile {
+          width: 87vw;
+          grid-template-columns: max-content;
+          grid-template-rows: 5rem 5rem 5rem 5rem;
+          grid-template-areas:
+            "box1" 
+            "box2"
+            "box3"
+            "box4";
+          grid-gap: 1rem;
+          span:nth-child(1) {
+            grid-area: box1;
+            padding-top: 1.5rem;
+          }
+          span:nth-child(2) {
+            grid-area: box2;
+            padding-top: 0rem;
+            margin-top: -1rem;
+          }
+          span:nth-child(3) {
+            grid-area: box3;
+            padding-top: 0;
+            text-align: left;
+            margin-top: -2rem;
+          }
+          span:nth-child(4) {
+            grid-area: box4;
+            text-align: left;
+            margin-top: -3rem;
+          }
+        }
+
+        .investment-btns {
+          margin-top: 1vw;
+          display: flex;
+          flex-direction: column;
+          button {
+            height: 7rem;
+            border-radius: 3px;
+            width: 87vw;
+            &:nth-child(1) {
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+    }
+    .right-section {
+      margin-top: 15vw;
+      margin-bottom: 10vw;
+      .youtube-video-container {
+        width: 87vw;
+        height: 53.5vw;
+        grid-template-rows: 2fr 45px 1fr 11.42vw;
+        .heading-youtube-bg {
+          width: 87vw;
+          height: 11.42vw;
+          line-height: 11vw;
+          span {
+            padding-left: 6vw;
+            font-size: 4vw;
+          }
+        }
+      }
+      h2 {
+        margin-top: 6vw;
+      }
+      p {
+        margin-top: 5vw;
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  .bottom-section {
+    height: 170vw;
+    padding-top: 5vw;
+    .bottom-greyish-div {
+      margin-left: 0;  
+      h1{
+        margin-left: 6vw;
+      }      
+      .bottom-white-div {
+        margin-top: 6vw;
+        height: 140vw;
+        width: 100vw;
+        .light-greyish-div {
+          height: 30vw;
+          padding: 0 3vw 0 6vw;
+          line-height: 3.5rem;
+          p {
+            text-align: left;
+            font-size: 2rem;
+            height: 9.5vw;
+            padding: 3vw 0 2.08vw 0;
+          }
+        }
+        h3 {
+          margin-top: 3.2vw;
+          margin-top: 10vw;
+        }
+        .input-align-div {
+          margin-top: 4vw;
+          height: 6vw;
+          input {
+            font-size: 3rem;
+            display: block;
+            align-items: center;
+          }
+          .input-one-investment {
+            margin: 0 auto;
+            width: 60vw;
+          }
+          .input-two-years {
+            margin: 0 auto;
+            width: 60vw;
+          }
+
+          .in-next-year {
+            margin-top: 3vw;
+            margin-bottom: 6vw;
+            display: block;
+          }
+          .no-of-years {
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+            display: block;
+          }
+        }
+        .btn-next-investment {
+          margin-top: 55vw;
+          width: 60vw;
+        }
+      }
+    }
+  }
+}
