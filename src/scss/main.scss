@@ -863,10 +863,14 @@ input {
   }
 
   .main-section {
+    margin-top: 4vw;
     margin-left: 6vw;
     margin-right: 2vw;
     grid-template-columns: 1fr;
     .left-section {
+      h1 {
+        font-size: 3.4rem;
+      }
       p {
         max-width: 87vw;
       }
@@ -874,6 +878,7 @@ input {
         font-size: 2rem;
       }
       .calculation-section {
+        margin-top: 4vw;
         .flexbox-text-1 {
           width: 87vw;
         }
@@ -883,6 +888,23 @@ input {
           span:nth-child(2) {
             margin: 0;
           }
+        }
+        .expenditure-row {
+          margin-top: 4.5vw;
+        }
+        .rangeslider {
+          margin-top: 4.5vw;
+        }
+        .para-years {
+          margin-top: 4.5vw;
+        }
+        .button-years {
+          margin-top: 3vw;
+        }
+
+        .line-under-year-btns {
+          margin-top: 4vw;
+          margin-bottom: 4vw;
         }
 
         .investment-btns {
@@ -911,6 +933,10 @@ input {
           }
         }
       }
+      p {
+        margin-top: 3vw;
+        font-size: 2.2rem;
+      }
     }
   }
 
@@ -921,12 +947,12 @@ input {
         height: 45vw;
         .light-greyish-div {
           height: 10.5vw;
-          padding: 0 10vw;
+          padding: 0 3vw;
           line-height: 3.5rem;
           p {
-            font-size: 2vw;
+            font-size: 2rem;
             height: 9.5vw;
-            padding: 2.1vw 1vw 2.08vw 1vw;
+            padding: 2.1vw 0 2.08vw 0;
           }
         }
         h3 {
@@ -938,13 +964,11 @@ input {
       }
     }
   }
-
-  
 }
 
 /* Experimental layout lower than 600px */
 
-@media screen and (max-width: 500px) and (min-width: 599px) {
+@media screen and (max-width: 599px) and (min-width: 500px) {
   html {
     font-size: 45%;
   }
@@ -968,10 +992,14 @@ input {
   }
 
   .main-section {
+    margin-top: 4vw;
     margin-left: 6vw;
     margin-right: 2vw;
     grid-template-columns: 1fr;
     .left-section {
+      h1 {
+        font-size: 3.4rem;
+      }
       p {
         max-width: 87vw;
       }
@@ -979,6 +1007,7 @@ input {
         font-size: 2rem;
       }
       .calculation-section {
+        margin-top: 4vw;
         .flexbox-text-1 {
           width: 87vw;
         }
@@ -988,6 +1017,23 @@ input {
           span:nth-child(2) {
             margin: 0;
           }
+        }
+        .expenditure-row {
+          margin-top: 4.5vw;
+        }
+        .rangeslider {
+          margin-top: 4.5vw;
+        }
+        .para-years {
+          margin-top: 4.5vw;
+        }
+        .button-years {
+          margin-top: 3vw;
+        }
+
+        .line-under-year-btns {
+          margin-top: 4vw;
+          margin-bottom: 4vw;
         }
 
         .investment-btns {
@@ -1016,6 +1062,10 @@ input {
           }
         }
       }
+      p {
+        margin-top: 3vw;
+        font-size: 2.2rem;
+      }
     }
   }
 
@@ -1026,12 +1076,12 @@ input {
         height: 45vw;
         .light-greyish-div {
           height: 10.5vw;
-          padding: 0 10vw;
+          padding: 0 3vw;
           line-height: 3.5rem;
           p {
-            font-size: 2vw;
+            font-size: 2rem;
             height: 9.5vw;
-            padding: 2.1vw 1vw 2.08vw 1vw;
+            padding: 2.1vw 0 2.08vw 0;
           }
         }
         h3 {
