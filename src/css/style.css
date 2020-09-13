@@ -3,7 +3,7 @@
   --color-background: #f4f4f4;
   --color-sec-background: #e8ecf4;
   --color-white: #ffffff;
-  --color-black: 0, 0, 0;
+  --color-black: rgb(0,0,0);
   --color-primary: #2562ed;
   --color-text: #333f52;
   --color-year-button: #bec4cc;
@@ -23,8 +23,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Open sans", sans-serif;
-  height: 2000px;
-  max-width: 1920;
+  width: 100%;
   color: var(--color-text-nav);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
@@ -37,13 +36,13 @@ input {
   font-family: "Open sans", sans-serif; }
 
 .main-header {
-  height: 10rem; }
+  height: 5vw; }
 
 .nav-container {
   position: fixed;
   display: flex;
   width: 100%;
-  padding: 2.8rem 2.7rem;
+  padding: 1.4vw 1.1vw;
   justify-content: space-between;
   align-items: center;
   top: 0;
@@ -56,25 +55,25 @@ input {
 
 .nav-menu-left-container {
   display: flex;
-  margin-left: 2.7rem;
+  margin-left: 1.45vw;
   align-items: center; }
   .nav-menu-left-container .fine-line {
     position: relative;
     height: 5.2rem;
     width: 1px;
-    left: 5rem;
+    left: 2.9vw;
     border-left: 1px solid #e3e3e3; }
   .nav-menu-left-container .nav-items-left {
     display: flex;
-    margin-left: 10rem; }
+    margin-left: 5.45vw; }
     .nav-menu-left-container .nav-items-left .nav-item:nth-child(2) {
-      margin-left: 4.5rem; }
+      margin-left: 2.1vw; }
     .nav-menu-left-container .nav-items-left .nav-item a {
       color: var(--color-text); }
 
 .nav-menu-right-container {
   display: flex;
-  margin-right: 14%;
+  margin-right: 11vw;
   align-items: center; }
   .nav-menu-right-container .nav-items-right {
     display: flex; }
@@ -103,8 +102,8 @@ input {
   font-weight: 700;
   color: var(--color-primary-logo);
   justify-content: flex-start;
-  margin-left: 8.3rem;
-  padding: 0.3rem 0.8rem; }
+  margin-left: 4.4vw;
+  padding: 0.4rem 0.8rem 0 0.8rem; }
 
 .nav-items {
   display: flex;
@@ -135,28 +134,28 @@ input {
   outline: none;
   border-radius: 0.2rem;
   background: var(--color-primary);
-  box-shadow: 1px 7px 15px rgba(var(--color-black), 0.25);
+  box-shadow: 1px 7px 15px rgba(0, 0, 0, 0.25);
   transition: all 0.1s; }
   .nav-btn .btn-signup:hover {
     border: 1px solid var(--color-primary);
     background: var(--color-white);
     color: var(--color-primary);
-    box-shadow: 8px 8px 20px rgba(var(--color-black), 0.25); }
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25); }
   .nav-btn .btn-signup:focus {
     border: 1px solid var(--color-primary);
     background: var(--color-white);
     color: var(--color-primary);
-    box-shadow: 8px 8px 20px rgba(var(--color-black), 0.25); }
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25); }
   .nav-btn .btn-signup:active {
-    box-shadow: inset 2px 2px 5px rgba(var(--color-black), 0.1); }
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1); }
 
 /* Navigation ends here */
 /* Hero Section Starts here*/
 .main-section {
-  margin-top: 4rem;
-  margin-left: 14.4rem;
-  margin-right: 12.4rem;
-  padding-bottom: 8rem;
+  margin-top: 2.4vw;
+  margin-left: 7.6vw;
+  margin-right: 6.5vw;
+  padding-bottom: 4.2vw;
   display: grid;
   grid-template-columns: 5fr 48.5rem; }
   .main-section .left-section h1 {
@@ -164,11 +163,11 @@ input {
     color: var(--color-text); }
   .main-section .left-section p {
     font-size: 2.2rem;
-    line-height: 4.2rem;
-    margin-top: 2.4rem;
-    margin-right: 16.7rem; }
+    line-height: 2.2vw;
+    margin-top: 1.15vw;
+    max-width: 53vw; }
   .main-section .left-section .did-you-know {
-    margin-top: 2rem;
+    margin-top: 1.35vw;
     display: inline-block;
     font-size: 1.8rem;
     padding: 1.3rem 3.5rem;
@@ -179,26 +178,27 @@ input {
       font-weight: 700;
       color: var(--color-primary); }
   .main-section .left-section .calculation-section {
-    margin-top: 5rem; }
+    margin-top: 2.35vw; }
     .main-section .left-section .calculation-section .btn-lumpsum,
     .main-section .left-section .calculation-section .btn-sip {
       position: relative;
       background-color: transparent;
       font-size: 2.6rem;
-      font-weight: 600;
-      padding: 0.5rem 0;
+      font-weight: 700;
+      padding: 0.37rem 0;
       border: none;
       outline: none;
       transition: all 0.2s ease 0s; }
       .main-section .left-section .calculation-section .btn-lumpsum:hover,
       .main-section .left-section .calculation-section .btn-sip:hover {
-        color: var(--color-primary); }
+        color: var(--color-primary);
+        border-bottom: none; }
       .main-section .left-section .calculation-section .btn-lumpsum:after,
       .main-section .left-section .calculation-section .btn-sip:after {
         content: "";
         display: block;
         position: absolute;
-        bottom: -10%;
+        bottom: -9.5%;
         left: 50%;
         height: 4px;
         width: 0;
@@ -223,9 +223,10 @@ input {
       color: rgba(51, 63, 82, 0.3); }
     .main-section .left-section .calculation-section .expenditure-row {
       display: flex;
+      width: 56.9vw;
+      margin-top: 3.46vw;
       justify-content: space-between;
-      margin-top: 6.6rem;
-      margin-right: 6.8rem; }
+      margin-right: 3.54vw; }
       .main-section .left-section .calculation-section .expenditure-row span:nth-child(1) {
         color: var(--color-text);
         font-size: 2.4rem; }
@@ -237,16 +238,15 @@ input {
           color: var(--color-primary);
           font-size: 3rem;
           font-weight: 600; }
-    .main-section .left-section .calculation-section .range-slider {
-      margin-top: 7.4rem;
-      margin-left: 5.5rem; }
-    .main-section .left-section .calculation-section #slider {
-      width: 97.8rem; }
+    .main-section .left-section .calculation-section .rangeslider {
+      margin-top: 2.7vw;
+      margin-left: 2.81vw;
+      width: 51.5vw; }
     .main-section .left-section .calculation-section .para-years {
       font-size: 2.4rem;
-      margin-top: 8.3rem; }
+      margin-top: 3.6vw; }
     .main-section .left-section .calculation-section .button-years {
-      margin-top: 4.1rem; }
+      margin-top: 1.82vw; }
       .main-section .left-section .calculation-section .button-years button {
         height: 6.4rem;
         width: 13.6rem;
@@ -258,9 +258,9 @@ input {
         border: 1px solid var(--color-primary);
         outline: none; }
         .main-section .left-section .calculation-section .button-years button:nth-child(1) {
-          margin-right: 4rem; }
+          margin-right: 2.08vw; }
         .main-section .left-section .calculation-section .button-years button:nth-child(2) {
-          margin-right: 4rem;
+          margin-right: 2.08vw;
           color: var(--color-year-button);
           background-color: var(--color-white);
           border: 1px solid var(--color-year-button); }
@@ -272,21 +272,21 @@ input {
           border: 1px solid var(--color-primary);
           background: var(--color-white);
           color: var(--color-primary);
-          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1); }
+          box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1); }
         .main-section .left-section .calculation-section .button-years button:focus {
           border: 1px solid var(--color-primary);
           background: var(--color-white);
           color: var(--color-primary);
-          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1); }
+          box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1); }
         .main-section .left-section .calculation-section .button-years button:active {
-          box-shadow: inset 2px 2px 5px rgba(var(--color-black), 0.1); }
+          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1); }
     .main-section .left-section .calculation-section .line-under-year-btns {
-      margin-top: 4rem;
-      margin-bottom: 4rem;
+      margin-top: 2.08vw;
+      margin-bottom: 1.45vw;
       display: block;
       border-top: 2px solid #e3e3e3;
       height: 1px;
-      width: 108.8rem; }
+      width: 56.66vw; }
     .main-section .left-section .calculation-section .flexbox-text-1 {
       display: flex;
       justify-content: space-between; }
@@ -302,15 +302,19 @@ input {
         display: block; }
     .main-section .left-section .calculation-section .flexbox-text-2 {
       display: flex;
+      height: 3rem;
       justify-content: space-between; }
       .main-section .left-section .calculation-section .flexbox-text-2 span:nth-child(1) {
+        display: block;
         font-size: 2.4rem;
         font-weight: 600; }
       .main-section .left-section .calculation-section .flexbox-text-2 span:nth-child(2) {
+        display: block;
+        margin-top: 0.5rem;
         font-size: 2.4rem;
         font-weight: 600; }
     .main-section .left-section .calculation-section .investment-btns {
-      margin-top: 7.5rem; }
+      margin-top: 4.06vw; }
       .main-section .left-section .calculation-section .investment-btns button {
         height: 6rem;
         width: 32.3rem;
@@ -329,14 +333,14 @@ input {
           border: 2px solid var(--color-primary);
           background: var(--color-white);
           color: var(--color-primary);
-          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1); }
+          box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1); }
         .main-section .left-section .calculation-section .investment-btns button:focus {
           border: 2px solid var(--color-primary);
           background: var(--color-white);
           color: var(--color-primary);
-          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1); }
+          box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1); }
         .main-section .left-section .calculation-section .investment-btns button:active {
-          box-shadow: inset 1px 1px 2px rgba(var(--color-black), 0.1); }
+          box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1); }
   .main-section .right-section h2 {
     font-size: 3rem;
     color: var(--color-text);
@@ -381,40 +385,40 @@ input {
 /* Plan your Investment Section */
 .bottom-section {
   background-color: var(--color-sec-background);
-  color: 1px border pink;
   height: 79.4rem;
   padding-top: 5rem; }
   .bottom-section .bottom-greyish-div {
-    margin-left: 14rem; }
+    margin-left: 7.29vw; }
     .bottom-section .bottom-greyish-div h1 {
+      color: var(--color-black);
       font-size: 30px; }
     .bottom-section .bottom-greyish-div .bottom-white-div {
-      margin-top: 7rem;
+      margin-top: 3.64vw;
       border-radius: 1rem;
       background-color: #ffffff;
-      width: 164rem;
-      height: 48.1rem;
+      width: 85.4vw;
+      height: 25vw;
       align-content: center;
       text-align: center; }
       .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div {
-        height: 11.7rem;
+        height: 6vw;
         text-align: center;
         background-color: #f8faff; }
         .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
           display: block;
           font-size: 2.4rem;
           text-align: center;
-          height: 11.7rem;
+          height: 6vw;
           text-align: center;
-          padding: 4rem; }
+          padding: 2.2vw 2.08vw 2.08vw 2.08vw; }
       .bottom-section .bottom-greyish-div .bottom-white-div h3 {
         font-size: 2.8rem;
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 1.6vw;
         font-weight: 600; }
       .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div {
-        margin-top: 4rem;
-        height: 5.5rem; }
+        margin-top: 2.08vw;
+        height: 2.86vw; }
         .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div input {
           outline: none;
           color: rgba(51, 63, 82, 0.7);
@@ -422,12 +426,12 @@ input {
           font-size: 4rem;
           font-weight: 600;
           border: none;
-          padding-bottom: 2.05rem;
+          padding-bottom: 1.06vw;
           border-bottom: 3px solid #2562ed; }
         .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .input-one-investment {
-          width: 36.7rem; }
+          width: 19.11vw; }
         .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .input-two-years {
-          width: 21.8rem; }
+          width: 11.35vw; }
         .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div ::-webkit-input-placeholder {
           /* Chrome/Opera/Safari */
           color: rgba(51, 63, 82, 0.2); }
@@ -444,16 +448,16 @@ input {
           display: inline-block;
           font-size: 2.8rem;
           font-weight: 600;
-          margin: 0 7.2rem 0 6.4rem; }
+          margin: 0 3.75vw 0 3.33vw; }
         .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div .no-of-years {
           display: inline-block;
           font-size: 2.8rem;
           font-weight: 600;
-          margin: 0 0 0 4.05rem; }
+          margin: 0 0 0 2.1vw; }
       .bottom-section .bottom-greyish-div .bottom-white-div .btn-next-investment {
         border: none;
         outline: none;
-        margin-top: 6.95rem;
+        margin-top: 4.8vw;
         width: 17.1rem;
         height: 6rem;
         color: var(--color-white);
@@ -464,13 +468,37 @@ input {
           border: 2px solid var(--color-primary);
           background: var(--color-white);
           color: var(--color-primary);
-          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1); }
+          box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1); }
         .bottom-section .bottom-greyish-div .bottom-white-div .btn-next-investment:focus {
           border: 2px solid var(--color-primary);
           background: var(--color-white);
           color: var(--color-primary);
-          box-shadow: 8px 8px 20px rgba(var(--color-black), 0.1); }
+          box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1); }
         .bottom-section .bottom-greyish-div .bottom-white-div .btn-next-investment:active {
-          box-shadow: inset 1px 1px 2px rgba(var(--color-black), 0.1); }
+          box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1); }
 
 /* Plan your Investment Section ends here */
+/* @media screen and (max-width: 1366px) and (min-width: 768px) {
+  body {
+    width: 100vw;
+  }
+  .main-header {
+    height: 6rem;
+  }
+  .nav-container {
+    padding: 2vw 0 0 0;
+    margin-left: 3vw;
+  }
+  .nav-menu-left-container {
+    margin: 0;
+    .fine-line {
+      position: unset;
+      margin-left: 3vw;
+
+    }
+  }
+  .main-section {
+    margin-top: 5vw;
+    margin-left: calc(6vw+2px+1.4rem);
+  }
+} */
