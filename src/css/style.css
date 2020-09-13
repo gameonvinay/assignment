@@ -517,8 +517,6 @@ input {
     margin-left: 4vw;
     margin-right: 2vw;
     grid-template-columns: 5fr 30.31vw; }
-    .main-section .left-section h1 {
-      color: green; }
     .main-section .right-section .youtube-video-container {
       width: 30.31vw;
       height: 18.62vw; }
@@ -536,20 +534,3 @@ input {
         line-height: 42px; }
         .bottom-section .bottom-greyish-div .bottom-white-div .light-greyish-div p {
           height: 9vw; } }
-
-@media screen and (max-width: 1366px) and (min-width: 768px) {
-  body {
-    width: 100vw; }
-  .main-header {
-    height: 6rem; }
-  .nav-container {
-    padding: 2vw 0 0 0;
-    margin-left: 3vw; }
-  .nav-menu-left-container {
-    margin: 0; }
-    .nav-menu-left-container .fine-line {
-      position: unset;
-      margin-left: 3vw; }
-  .main-section {
-    margin-top: 5vw;
-    margin-left: calc(6vw+2px+1.4rem); } }
