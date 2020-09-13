@@ -942,7 +942,9 @@ input {
   
 }
 
-@media screen and (max-width: 599px) {
+/* Experimental layout lower than 600px */
+
+@media screen and (max-width: 500px) and (min-width: 599px) {
   html {
     font-size: 45%;
   }

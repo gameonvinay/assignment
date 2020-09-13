@@ -683,7 +683,8 @@ input {
       .bottom-section .bottom-greyish-div .bottom-white-div .input-align-div {
         height: 6vw; } }
 
-@media screen and (max-width: 599px) {
+/* Experimental layout lower than 600px */
+@media screen and (max-width: 500px) and (min-width: 599px) {
   html {
     font-size: 45%; }
   .main-header {
