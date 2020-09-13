@@ -212,7 +212,7 @@ input {
     }
     p {
       font-size: 2.2rem;
-      line-height: 42px;
+      line-height: 4.2rem;
       margin-top: 1.15vw;
       max-width: 53vw;
     }
@@ -487,7 +487,7 @@ input {
           display: inline-block;
           vertical-align: middle;
           line-height: normal;
-          font-size: 18px;
+          font-size: 2rem;
           color: var(--color-white);
           font-weight: 400;
           z-index: 1;
@@ -722,10 +722,10 @@ input {
   }
 
   .bottom-section {
-    height: 41.5vw;
+    height: 50vw;
     .bottom-greyish-div {
       .bottom-white-div {
-        height: 32vw;
+        height: 35vw;
         .light-greyish-div {
           height: 9.5vw;
           padding: 0 10vw;
@@ -736,11 +736,311 @@ input {
             padding: 2.1vw 1.5vw 2.08vw 1.5vw;
           }
         }
+        h3 {
+          margin-top: 3.2vw;
+        }
       }
     }
   }
 
   
+}
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+
+  .main-header {
+    height: 10vw;
+  }
+
+  .nav-menu-left-container {
+    margin-left: 2.45vw;
+  }
+  .nav-menu-right-container {
+    margin-right: 0.9vw;
+  }
+
+  .main-section {
+    margin-left: 4vw;
+    margin-right: 2vw;
+    grid-template-columns: 1fr 30.31vw;
+    .left-section {
+      p {
+        max-width: 59vw;
+      }
+      .did-you-know {
+        font-size: 2rem;
+      }
+      .calculation-section {
+        .flexbox-text-1 {
+          width: 61vw;
+        }
+        .flexbox-text-2 {
+          width: 61vw;
+          height: unset;
+          span:nth-child(2) {
+            margin: 0;
+          }
+        }
+
+        .investment-btns {
+          button {
+            width: 31rem;
+            &:nth-child(1) {
+              margin-right: 2rem;
+            }
+          }
+        }
+      }
+    }
+    .right-section {
+      .youtube-video-container {
+        width: 30.31vw;
+        height: 18.62vw;
+        .heading-youtube-bg {
+          width: 30.31vw;
+          span {
+            padding-left: 2vw;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-section {
+    height: 55vw;
+    .bottom-greyish-div {
+      .bottom-white-div {
+        height: 38vw;
+        .light-greyish-div {
+          height: 9.5vw;
+          padding: 0 10vw;
+          line-height: 3.5rem;
+          p {
+            font-size: 2vw;
+            height: 9.5vw;
+            padding: 2.1vw 1vw 2.08vw 1vw;
+          }
+        }
+        h3 {
+          margin-top: 3.2vw;
+        }
+        .input-align-div {
+          height: 4vw;
+        }
+      }
+    }
+  }
+
+  
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+
+  .main-header {
+    height: 10vw;
+  }
+
+  .nav-container {
+    padding: 3vw;
+  }
+
+  .nav-menu-left-container {
+    margin-left: 2.45vw;
+  }
+  .nav-menu-right-container {
+    margin-right: 0.9vw;
+    .nav-items-right {
+      display: none;
+    }
+  }
+
+  .main-section {
+    margin-left: 6vw;
+    margin-right: 2vw;
+    grid-template-columns: 1fr;
+    .left-section {
+      p {
+        max-width: 87vw;
+      }
+      .did-you-know {
+        font-size: 2rem;
+      }
+      .calculation-section {
+        .flexbox-text-1 {
+          width: 87vw;
+        }
+        .flexbox-text-2 {
+          width: 87vw;
+          height: unset;
+          span:nth-child(2) {
+            margin: 0;
+          }
+        }
+
+        .investment-btns {
+          button {
+            width: 33.5rem;
+            &:nth-child(1) {
+              margin-right: 5rem;
+            }
+          }
+        }
+      }
+    }
+    .right-section {
+      margin-top: 5vw;
+      .youtube-video-container {
+        width: 87vw;
+        height: 53.5vw;
+        grid-template-rows: 2fr 45px 1fr 11.42vw;
+        .heading-youtube-bg {
+          width: 87vw;
+          height: 11.42vw;
+          line-height: 11vw;
+          span {
+            padding-left: 6vw;
+            font-size: 2.6vw;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-section {
+    height: 60vw;
+    .bottom-greyish-div {
+      .bottom-white-div {
+        height: 45vw;
+        .light-greyish-div {
+          height: 10.5vw;
+          padding: 0 10vw;
+          line-height: 3.5rem;
+          p {
+            font-size: 2vw;
+            height: 9.5vw;
+            padding: 2.1vw 1vw 2.08vw 1vw;
+          }
+        }
+        h3 {
+          margin-top: 3.2vw;
+        }
+        .input-align-div {
+          height: 6vw;
+        }
+      }
+    }
+  }
+
+  
+}
+
+@media screen and (max-width: 599px) {
+  html {
+    font-size: 45%;
+  }
+
+  .main-header {
+    height: 10vw;
+  }
+
+  .nav-container {
+    padding: 3vw;
+  }
+
+  .nav-menu-left-container {
+    margin-left: 2.45vw;
+  }
+  .nav-menu-right-container {
+    margin-right: 0.9vw;
+    .nav-items-right {
+      display: none;
+    }
+  }
+
+  .main-section {
+    margin-left: 6vw;
+    margin-right: 2vw;
+    grid-template-columns: 1fr;
+    .left-section {
+      p {
+        max-width: 87vw;
+      }
+      .did-you-know {
+        font-size: 2rem;
+      }
+      .calculation-section {
+        .flexbox-text-1 {
+          width: 87vw;
+        }
+        .flexbox-text-2 {
+          width: 87vw;
+          height: unset;
+          span:nth-child(2) {
+            margin: 0;
+          }
+        }
+
+        .investment-btns {
+          button {
+            width: 33.5rem;
+            &:nth-child(1) {
+              margin-right: 5rem;
+            }
+          }
+        }
+      }
+    }
+    .right-section {
+      margin-top: 5vw;
+      .youtube-video-container {
+        width: 87vw;
+        height: 53.5vw;
+        grid-template-rows: 2fr 45px 1fr 11.42vw;
+        .heading-youtube-bg {
+          width: 87vw;
+          height: 11.42vw;
+          line-height: 11vw;
+          span {
+            padding-left: 6vw;
+            font-size: 2.6vw;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-section {
+    height: 60vw;
+    .bottom-greyish-div {
+      .bottom-white-div {
+        height: 45vw;
+        .light-greyish-div {
+          height: 10.5vw;
+          padding: 0 10vw;
+          line-height: 3.5rem;
+          p {
+            font-size: 2vw;
+            height: 9.5vw;
+            padding: 2.1vw 1vw 2.08vw 1vw;
+          }
+        }
+        h3 {
+          margin-top: 3.2vw;
+        }
+        .input-align-div {
+          height: 6vw;
+        }
+      }
+    }
+  }
 }
 
 
