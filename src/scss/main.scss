@@ -590,7 +590,7 @@ input {
           display: inline-block;
           font-size: 2.8rem;
           font-weight: 600;
-          margin: 0 3.75vw 0 3.33vw;
+          margin: 3vw 3.75vw 3.5vw 3.33vw;
         }
         .no-of-years {
           display: inline-block;
@@ -598,32 +598,33 @@ input {
           font-weight: 600;
           margin: 0 0 0 2.1vw;
         }
-      }
-      .btn-next-investment {
-        cursor: pointer;
-        border: none;
-        outline: none;
-        margin-top: 4.8vw;
-        width: 17.1rem;
-        height: 6rem;
-        color: var(--color-white);
-        background: var(--color-primary);
-        font-size: 2rem;
-        font-weight: 600;
-        &:hover {
-          border: 2px solid var(--color-primary);
-          background: var(--color-white);
-          color: var(--color-primary);
-          box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        &:focus {
-          border: 2px solid var(--color-primary);
-          background: var(--color-white);
-          color: var(--color-primary);
-          box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        &:active {
-          box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+        .btn-next-investment {
+          cursor: pointer;
+          display: block;
+          border: none;
+          outline: none;
+          margin: 0 auto;
+          width: 17.1rem;
+          height: 6rem;
+          color: var(--color-white);
+          background: var(--color-primary);
+          font-size: 2rem;
+          font-weight: 600;
+          &:hover {
+            border: 2px solid var(--color-primary);
+            background: var(--color-white);
+            color: var(--color-primary);
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
+          }
+          &:focus {
+            border: 2px solid var(--color-primary);
+            background: var(--color-white);
+            color: var(--color-primary);
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
+          }
+          &:active {
+            box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+          }
         }
       }
     }
@@ -727,22 +728,30 @@ input {
   .bottom-section {
     height: 50vw;
     .bottom-greyish-div {
-      margin-left: 3.8vw;
+      margin-left: 6vw;
       .bottom-white-div {
         height: 35vw;
-        width: 92.4vw;
+        width: 87vw;
         .light-greyish-div {
-          height: 9.5vw;
-          padding: 0 10vw;
-          line-height: 4.2rem;
+          height: 7.5vw;
+          padding: 0;
+          line-height: 3.5rem;
           p {
-            font-size: 2.6rem;
+            font-size: 2rem;
             height: 9.5vw;
-            padding: 2.1vw 1.5vw 2.08vw 1.5vw;
+            padding: 2.1vw 0 2.08vw 0;
           }
         }
         h3 {
           margin-top: 3.2vw;
+          margin-bottom: 2vw;
+        }
+        .input-align-div {
+          height: 30vw;
+          .btn-next-investment {
+            margin-top: 3vw;
+          }
+          
         }
       }
     }
@@ -840,27 +849,32 @@ input {
   }
 
   .bottom-section {
-    height: 55vw;
+    height: 65vw;
     .bottom-greyish-div {
-      margin-left: 3.8vw;
+      margin-left: 6vw;
       .bottom-white-div {
-        height: 35vw;
-        width: 92.4vw;
+        height: 45vw;
+        width: 87vw;
         .light-greyish-div {
-          height: 9.5vw;
-          padding: 0 10vw;
+          height: 10.5vw;
+          padding: 0 3vw;
           line-height: 3.5rem;
           p {
-            font-size: 2vw;
+            font-size: 2rem;
             height: 9.5vw;
-            padding: 2.1vw 1vw 2.08vw 1vw;
+            padding: 2.1vw 0 2.08vw 0;
           }
         }
         h3 {
           margin-top: 3.2vw;
+          margin-bottom: 2vw;
         }
         .input-align-div {
-          height: 4vw;
+          height: 30vw;
+          .btn-next-investment {
+            margin-top: 3vw;
+          }
+          
         }
       }
     }
@@ -1022,9 +1036,14 @@ input {
         }
         h3 {
           margin-top: 3.2vw;
+          margin-bottom: 2vw;
         }
         .input-align-div {
-          height: 6vw;
+          height: 30vw;
+          .btn-next-investment {
+            margin-top: 3vw;
+          }
+          
         }
       }
     }
@@ -1170,11 +1189,11 @@ input {
   }
 
   .bottom-section {
-    height: 90vw;
+    height: 150vw;
     .bottom-greyish-div {
       margin-left: 6vw;        
       .bottom-white-div {
-        height: 65vw;
+        height: 95vw;
         width: 87vw;
         .light-greyish-div {
           height: 20vw;
@@ -1187,18 +1206,40 @@ input {
           }
         }
         h3 {
-          margin-top: 3.2vw;
+          margin-top: 4vw;
+          margin-bottom: 6vw;
         }
         .input-align-div {
           margin-top: 4vw;
-          height: 6vw;
+          height: 72vw;
           input {
             font-size: 3rem;
+            display: block;
+            align-items: center;
           }
-        }
-        .btn-next-investment {
-          margin-top: 10vw;
-          width: 30rem;
+          .input-one-investment {
+            margin: 0 auto;
+            width: 60vw;
+          }
+          .input-two-years {
+            margin: 0 auto;
+            width: 60vw;
+          }
+
+          .in-next-year {
+            margin-top: 3vw;
+            margin-bottom: 5vw;
+            display: block;
+          }
+          .no-of-years {
+            margin-top: 3vw;
+            margin-bottom: 6vw;
+            display: block;
+          }
+          .btn-next-investment {
+            display: block;
+            margin: 0 auto;
+          }
         }
       }
     }
@@ -1369,12 +1410,12 @@ input {
           }
         }
         h3 {
-          margin-top: 3.2vw;
           margin-top: 10vw;
+          margin-bottom: 10vw;
         }
         .input-align-div {
           margin-top: 4vw;
-          height: 6vw;
+          height: 90vw;
           input {
             font-size: 3rem;
             display: block;
@@ -1396,13 +1437,13 @@ input {
           }
           .no-of-years {
             margin-top: 3vw;
-            margin-bottom: 3vw;
+            margin-bottom: 10vw;
             display: block;
           }
-        }
-        .btn-next-investment {
-          margin-top: 45vw;
-          width: 60vw;
+          .btn-next-investment {
+            display: block;
+            margin: 0 auto;
+          }
         }
       }
     }
@@ -1564,13 +1605,13 @@ input {
       }
     }
   }
-
   .bottom-section {
     height: 170vw;
     padding-top: 5vw;
     .bottom-greyish-div {
       margin-left: 0;  
       h1{
+        font-size: 2.8rem;
         margin-left: 6vw;
       }      
       .bottom-white-div {
@@ -1579,22 +1620,22 @@ input {
         width: 100vw;
         .light-greyish-div {
           height: 30vw;
-          padding: 0 3vw 0 6vw;
+          padding: 0 10vw 0 8vw;
           line-height: 3.5rem;
           p {
             text-align: left;
-            font-size: 2rem;
+            font-size: 1.8rem;
             height: 9.5vw;
             padding: 3vw 0 2.08vw 0;
           }
         }
         h3 {
-          margin-top: 3.2vw;
           margin-top: 10vw;
+          margin-bottom: 10vw;
         }
         .input-align-div {
           margin-top: 4vw;
-          height: 6vw;
+          height: 90vw;
           input {
             font-size: 3rem;
             display: block;
@@ -1616,15 +1657,18 @@ input {
           }
           .no-of-years {
             margin-top: 3vw;
-            margin-bottom: 3vw;
+            margin-bottom: 10vw;
             display: block;
           }
-        }
-        .btn-next-investment {
-          margin-top: 55vw;
-          width: 60vw;
+          .btn-next-investment {
+            display: block;
+            margin: 0 auto;
+          }
         }
       }
     }
   }
 }
+
+
+  
